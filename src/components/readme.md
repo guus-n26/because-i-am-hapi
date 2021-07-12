@@ -1,0 +1,1 @@
+Shared component for the different webpages
