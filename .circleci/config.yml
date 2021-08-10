@@ -4,7 +4,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: docker build --tag  because-i-am-hapi .
+      - run: docker build --tag because-i-am-hapi .
       - run: |
-          docker run --init --rm --publish 3000:3000 because-i-am-hapi
-          docker exec because-i-am-hapi --retry 10 --retry-connrefused http://localhost:3000
+        docker run -d --name because-i-am-hapi because-i-am-hapi
+        docker exec because-i-am-hapi --retry 10 --retry-connrefused http://localhost:8080
