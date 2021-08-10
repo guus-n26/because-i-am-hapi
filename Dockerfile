@@ -1,16 +1,14 @@
 FROM node:14
 
-USER node
-
 RUN mkdir /home/node/code
 
 WORKDIR /home/node/code
 
-COPY --chown=node:node . ./
+COPY . ./
 
 RUN yarn install --frozen-lockfile
 
-COPY --chown=node:node . .
+COPY . .
 
 ENV PORT="3000"
 
