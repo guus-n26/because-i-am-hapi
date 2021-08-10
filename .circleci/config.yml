@@ -3,15 +3,15 @@ version: 2.1
 orbs:
   node: circleci/node@2.0.3
 
-commands:
-  setup-node-and-yarn-install-with-cache:
-    steps:
-      - node/install:
-          install-yarn: true
-          node-version: latest
-      - node/install-packages:
-          pkg-manager: yarn
-          cache-key: yarn.lock
+# commands:
+#   setup-node-and-yarn-install-with-cache:
+#     steps:
+#       - node/install:
+#           install-yarn: true
+#           node-version: latest
+#       - node/install-packages:
+#           pkg-manager: yarn
+#           cache-key: yarn.lock
 
 jobs:
   lint-and-test:
@@ -26,6 +26,11 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
+          jobs:
+  build:
+    machine: true
+    steps:
+      - run: docker build --tag  because-i-am-hapi .
 
 workflows:
   run-ci:
