@@ -1,4 +1,4 @@
-FROM artifactory.cd-tech26.de/docker/n26/node-14:latest
+FROM node:14
 
 USER node
 
