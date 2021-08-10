@@ -44,7 +44,7 @@ export async function createServer({
 
 async function main() {
   const configServers = new ConfigurationService<ServerOptions>(validator);
-  const port = process.env.PORT || "5000";
+  const port = process.env.PORT || "3000";
   const options = await configServers
     .withStaticConfig({ port })
     .withEnvironment()
