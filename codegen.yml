@@ -1,0 +1,7 @@
+schema: "src/plugins/graphql-plugin/graphql/schema.graphql"
+generates:
+  ./src/@types/schema.d.ts:
+    plugins:
+      - typescript
+require:
+  - "ts-node/register/transpile-only"

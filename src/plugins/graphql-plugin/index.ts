@@ -1,32 +1,29 @@
-import { Server } from "@hapi/hapi";
-import { ApolloServer, gql } from "apollo-server-hapi";
-import { makeExecutableSchema } from "graphql-tools";
+import { Server, Request, ResponseToolkit } from "@hapi/hapi";
+import { ApolloServer } from "apollo-server-hapi";
+import schema from "./graphql/schema";
 
-const graphqlFn = async (server: Server, options: any) => {
-  const schema = makeExecutableSchema({
-    typeDefs: gql`
-      type Query {
-        name: String
-      }
-    `,
-    resolvers: {
-      Query: {
-        name: () => "Guus",
-      },
-    },
-  });
+export interface ApolloContextProviderArgs {
+  request: Request;
+  h: ResponseToolkit;
+}
+
+const apolloGraphqlPlugin = async (server: Server, options: any) => {
   const apolloServer = new ApolloServer({
     schema,
+    context: (context: ApolloContextProviderArgs) => ({
+      ...context,
+      options,
+    }),
   });
 
   await apolloServer.start();
+
+  // Decorate the request with the schema
   server.decorate("request", "getSchema", () => schema);
 
   await apolloServer.applyMiddleware({
     app: server,
   });
-
-  await apolloServer.installSubscriptionHandlers(server.listener);
 };
 
-export default graphqlFn;
+export default apolloGraphqlPlugin;

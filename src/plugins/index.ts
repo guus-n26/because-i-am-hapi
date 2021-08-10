@@ -1,8 +1,9 @@
 import { Server, ServerRegisterPluginObject } from "@hapi/hapi";
 import Inert from "@hapi/inert";
-import backendApi from "./api-plugin";
-import graphqlPluginFn from "./graphql-plugin";
-import mainRoutePlugin from "./main-route-plugin";
+import backendApi from "./rest-api-plugin";
+import graphqlPlugin from "./graphql-plugin";
+import staticFilePlugin from "./static-file-plugin";
+import serverSideRenderPlugin from "./main-page-plugin";
 
 const hapiPino: ServerRegisterPluginObject<any> = {
   plugin: require("hapi-pino"),
@@ -14,11 +15,12 @@ const hapiPino: ServerRegisterPluginObject<any> = {
 };
 
 async function registerPlugins(server: Server, options: any = {}) {
-  await graphqlPluginFn(server, options);
+  await graphqlPlugin(server, options);
   await server.register([
     hapiPino,
+    { plugin: staticFilePlugin },
     { plugin: backendApi },
-    { plugin: mainRoutePlugin },
+    { plugin: serverSideRenderPlugin },
   ]);
   await server.register(Inert);
 }

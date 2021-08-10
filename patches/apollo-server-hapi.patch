@@ -1,0 +1,162 @@
+diff --git a/dist/ApolloServer.d.ts b/dist/ApolloServer.d.ts
+index f4ee443985084fd51f91b8feb3d5281143ce8e44..7c2236fa629ca13409b620198fed5c9829c47940 100644
+--- a/dist/ApolloServer.d.ts
++++ b/dist/ApolloServer.d.ts
+@@ -1,4 +1,4 @@
+-import hapi from 'hapi';
++import hapi from '@hapi/hapi';
+ export { GraphQLOptions, GraphQLExtension } from 'apollo-server-core';
+ import { ApolloServerBase, GraphQLOptions } from 'apollo-server-core';
+ export declare class ApolloServer extends ApolloServerBase {
+diff --git a/dist/hapiApollo.d.ts b/dist/hapiApollo.d.ts
+index 0e1f3759b099a588a1a7708708c9d582e2c7b894..5b7f0f38cf5f5f0ea7c08b0425e7e0b94fabb48d 100644
+--- a/dist/hapiApollo.d.ts
++++ b/dist/hapiApollo.d.ts
+@@ -1,4 +1,4 @@
+-import { Server, Request, RouteOptions } from 'hapi';
++import { Server, Request, RouteOptions } from '@hapi/hapi';
+ import { GraphQLOptions } from 'apollo-server-core';
+ import { ValueOrPromise } from 'apollo-server-types';
+ export interface IRegister {
+diff --git a/src/ApolloServer.ts b/src/ApolloServer.ts
+index cafd8fc7ed4f47461f1d26c81a98e82d0d8a31fb..7fc9450d8fe159e519f8a3fbdfc7eb2891ce5fbb 100644
+--- a/src/ApolloServer.ts
++++ b/src/ApolloServer.ts
+@@ -1,31 +1,31 @@
+-import hapi from 'hapi';
+-import { parseAll } from 'accept';
++import hapi from "@hapi/hapi";
++import { parseAll } from "accept";
+ import {
+   renderPlaygroundPage,
+   RenderPageOptions as PlaygroundRenderPageOptions,
+-} from '@apollographql/graphql-playground-html';
++} from "@apollographql/graphql-playground-html";
+
+-import { graphqlHapi } from './hapiApollo';
++import { graphqlHapi } from "./hapiApollo";
+
+-export { GraphQLOptions, GraphQLExtension } from 'apollo-server-core';
++export { GraphQLOptions, GraphQLExtension } from "apollo-server-core";
+ import {
+   ApolloServerBase,
+   GraphQLOptions,
+   FileUploadOptions,
+   processFileUploads,
+-} from 'apollo-server-core';
++} from "apollo-server-core";
+
+ function handleFileUploads(uploadsConfig: FileUploadOptions) {
+   return async (request: hapi.Request, _h?: hapi.ResponseToolkit) => {
+     if (
+-      typeof processFileUploads === 'function' &&
+-      request.mime === 'multipart/form-data'
++      typeof processFileUploads === "function" &&
++      request.mime === "multipart/form-data"
+     ) {
+-      Object.defineProperty(request, 'payload', {
++      Object.defineProperty(request, "payload", {
+         value: await processFileUploads(
+           request.raw.req,
+           request.raw.res,
+-          uploadsConfig,
++          uploadsConfig
+         ),
+         writable: false,
+       });
+@@ -39,7 +39,7 @@ export class ApolloServer extends ApolloServerBase {
+   // be propagated with a generic to the super class
+   async createGraphQLServerOptions(
+     request: hapi.Request,
+-    h: hapi.ResponseToolkit,
++    h: hapi.ResponseToolkit
+   ): Promise<GraphQLOptions> {
+     return super.graphQLServerOptions({ request, h });
+   }
+@@ -65,27 +65,27 @@ export class ApolloServer extends ApolloServerBase {
+     // and also rethrown from graphQLServerOptions during later requests).
+     this.ensureStarting();
+
+-    if (!path) path = '/graphql';
++    if (!path) path = "/graphql";
+
+     await app.ext({
+-      type: 'onRequest',
+-      method: async function(request, h) {
++      type: "onRequest",
++      method: async function (request, h) {
+         if (request.path !== path) {
+           return h.continue;
+         }
+
+-        if (this.uploadsConfig && typeof processFileUploads === 'function') {
++        if (this.uploadsConfig && typeof processFileUploads === "function") {
+           await handleFileUploads(this.uploadsConfig)(request);
+         }
+
+-        if (this.playgroundOptions && request.method === 'get') {
++        if (this.playgroundOptions && request.method === "get") {
+           // perform more expensive content-type check only if necessary
+           const accept = parseAll(request.headers);
+           const types = accept.mediaTypes as string[];
+           const prefersHTML =
+             types.find(
+-              (x: string) => x === 'text/html' || x === 'application/json',
+-            ) === 'text/html';
++              (x: string) => x === "text/html" || x === "application/json"
++            ) === "text/html";
+
+           if (prefersHTML) {
+             const playgroundRenderPageOptions: PlaygroundRenderPageOptions = {
+@@ -97,7 +97,7 @@ export class ApolloServer extends ApolloServerBase {
+
+             return h
+               .response(renderPlaygroundPage(playgroundRenderPageOptions))
+-              .type('text/html')
++              .type("text/html")
+               .takeover();
+           }
+         }
+@@ -107,24 +107,24 @@ export class ApolloServer extends ApolloServerBase {
+
+     if (!disableHealthCheck) {
+       await app.route({
+-        method: '*',
+-        path: '/.well-known/apollo/server-health',
++        method: "*",
++        path: "/.well-known/apollo/server-health",
+         options: {
+           cors: cors !== undefined ? cors : true,
+         },
+-        handler: async function(request, h) {
++        handler: async function (request, h) {
+           if (onHealthCheck) {
+             try {
+               await onHealthCheck(request);
+             } catch {
+-              const response = h.response({ status: 'fail' });
++              const response = h.response({ status: "fail" });
+               response.code(503);
+-              response.type('application/health+json');
++              response.type("application/health+json");
+               return response;
+             }
+           }
+-          const response = h.response({ status: 'pass' });
+-          response.type('application/health+json');
++          const response = h.response({ status: "pass" });
++          response.type("application/health+json");
+           return response;
+         },
+       });
+diff --git a/src/hapiApollo.ts b/src/hapiApollo.ts
+index 6cf75bf135209835d302e3e93ac53bdc3c0aee7c..adcd2ebc674854fe230be1522bce08ad975f63ab 100644
+--- a/src/hapiApollo.ts
++++ b/src/hapiApollo.ts
+@@ -1,5 +1,5 @@
+ import Boom from 'boom';
+-import { Server, Request, RouteOptions } from 'hapi';
++import { Server, Request, RouteOptions } from '@hapi/hapi';
+ import {
+   GraphQLOptions,
+   runHttpQuery,

@@ -1,4 +1,4 @@
-FROM artifactory.cd-tech26.de/docker/n26/node-12:latest
+FROM artifactory.cd-tech26.de/docker/n26/node-14:latest
 
 USER node
 
@@ -6,7 +6,7 @@ RUN mkdir /home/node/code
 
 WORKDIR /home/node/code
 
-COPY --chown=node:node package.json yarn.lock .npmrc ./
+COPY --chown=node:node . ./
 
 RUN yarn install --frozen-lockfile
 

@@ -1,8 +1,17 @@
-import Path from "path";
+import "graphql-import-node";
+import path from "path";
 import { Server } from "@hapi/hapi";
 
 import registerPlugins from "./plugins";
 import { serverAuthSchema } from "./authentication";
+import ConfigurationService from "./services/config-service";
+import Joi from "joi";
+
+type ServerOptions = { port: string };
+
+const validator = Joi.object<ServerOptions>({
+  port: Joi.string().required(),
+});
 
 const log = console;
 
@@ -21,7 +30,7 @@ export async function createServer({
     host: "0.0.0.0",
     routes: {
       files: {
-        relativeTo: Path.join(__dirname, "build"),
+        relativeTo: path.join(__dirname, "build"),
       },
     },
   });
@@ -34,7 +43,13 @@ export async function createServer({
 }
 
 async function main() {
-  const options = { port: process.env.PORT || "5000" };
+  const configServers = new ConfigurationService<ServerOptions>(validator);
+  const port = process.env.PORT || "5000";
+  const options = await configServers
+    .withStaticConfig({ port })
+    .withEnvironment()
+    .validate();
+
   const server = await createServer(options);
 
   await server.start();
@@ -42,7 +57,7 @@ async function main() {
 }
 
 export function start() {
-  return main().catch((err: Error) => {
+  main().catch((err: Error) => {
     log.error(err.toString());
     process.exit(1);
   });

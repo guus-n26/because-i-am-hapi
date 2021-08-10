@@ -1,9 +1,14 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/plugins/main-route-plugin/client-entry.tsx",
+  entry: "./src/plugins/main-page-plugin/components/client-side-entry.tsx",
   module: {
     rules: [
+      {
+        test: /\.(graphql|gql)$/,
+        exclude: /node_modules/,
+        loader: "@graphql-tools/webpack-loader",
+      },
       {
         test: /\.tsx?$/,
         use: "ts-loader",

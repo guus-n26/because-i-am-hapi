@@ -149,3 +149,4 @@ yarn_cache_dir
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+!src/@types/**.*
