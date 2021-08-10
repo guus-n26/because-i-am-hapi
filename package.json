@@ -14,7 +14,9 @@
     "build": "yarn webpack --mode=production && tsc --build",
     "codegen": "graphql-codegen",
     "clean": "rimraf \"*.tgz\" \"*.tsbuildinfo\" \"!(jest.config|.eslintrc|ormconfig|webpack.config).{js,d.ts,map}\" \"!(node_modules|@types)/**/*.{js,d.ts,map}\"",
-    "prebuild": "yarn codegen"
+    "prebuild": "yarn codegen",
+    "lint": "echo lint",
+    "test": "echo test"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
