@@ -12,7 +12,7 @@ RUN yarn install --frozen-lockfile
 
 COPY --chown=node:node . .
 
-ENV PORT="3000"
+ENV PORT="8080"
 
 RUN yarn build
 
