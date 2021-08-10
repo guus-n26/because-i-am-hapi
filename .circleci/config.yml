@@ -16,9 +16,9 @@ orbs:
 jobs:
   build:
     machine: true
-      - setup_remote_docker:
-        version: 19.03.13
     steps:
+      - setup_remote_docker:
+          version: 19.03.13
       - run: docker build --tag  because-i-am-hapi .
 
 workflows:
