@@ -145,8 +145,9 @@ yarn_cache_dir
 # Use yarn zero-installs (https://yarnpkg.com/features/zero-installs)
 .yarn/*
 !.yarn/cache
-!.yarn/releases
+.yarn/releases
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
 !src/@types/**.*
+
