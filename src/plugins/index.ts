@@ -1,6 +1,6 @@
 import { Server, ServerRegisterPluginObject } from "@hapi/hapi";
 import Inert from "@hapi/inert";
-import backendApi from "./rest-api-plugin";
+import backendApi from "./management-endpoint-plugin";
 import graphqlPlugin from "./graphql-plugin";
 import staticFilePlugin from "./static-file-plugin";
 import serverSideRenderPlugin from "./main-page-plugin";
