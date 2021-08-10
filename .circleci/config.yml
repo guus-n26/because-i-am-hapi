@@ -7,4 +7,4 @@ jobs:
       - run: |
           docker build --tag  because-i-am-hapi .
           docker run -d --name because-i-am-hapi because-i-am-hapi
-          docker exec because-i-am-hapi --retry 10 --retry-connrefused http://localhost:3000
+          docker exec because-i-am-hapi curl --retry 10 --retry-connrefused http://localhost:3000
