@@ -16,7 +16,7 @@
     "clean": "rimraf \"*.tgz\" \"*.tsbuildinfo\" \"!(jest.config|.eslintrc|ormconfig|webpack.config).{js,d.ts,map}\" \"!(node_modules|@types)/**/*.{js,d.ts,map}\"",
     "prebuild": "yarn codegen",
     "lint": "echo lint",
-    "test": "echo test"
+    "test": "echo we are now running tests"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
