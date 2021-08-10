@@ -19,7 +19,6 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - setup-node-and-yarn-install-with-cache
       - run:
           name: Lint
           command: yarn lint
