@@ -143,9 +143,9 @@ yarn_cache_dir
 /tgz-files
 
 # Use yarn zero-installs (https://yarnpkg.com/features/zero-installs)
-.yarn/*
+!.yarn/*
 !.yarn/cache
-.yarn/releases
+!.yarn/releases/*
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
