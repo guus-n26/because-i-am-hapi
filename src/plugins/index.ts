@@ -1,28 +1,22 @@
-import { Server, ServerRegisterPluginObject } from "@hapi/hapi";
-import Inert from "@hapi/inert";
-import backendApi from "./management-endpoint-plugin";
-import graphqlPlugin from "./graphql-plugin";
-import staticFilePlugin from "./static-file-plugin";
-import serverSideRenderPlugin from "./main-page-plugin";
-
-const hapiPino: ServerRegisterPluginObject<any> = {
-  plugin: require("hapi-pino"),
-  options: {
-    prettyPrint: process.env.NODE_ENV !== "production",
-    // Redact Authorization headers, see https://getpino.io/#/docs/redaction
-    redact: ["req.headers.authorization"],
-  },
-};
+import { Server } from '@hapi/hapi';
+import Inert from '@hapi/inert';
+import graphqlPlugin from './graphql-plugin';
+import staticFilePlugin from './static-file-plugin';
+import mainPagePlugin from './main-page-plugin';
+import hapiAlivePlugin from './hapi-alive-plugin';
+// import hapiPinoPlugin from "./hapi-pino-plugin";
+// import loginPagePlugin from './login-page-plugin';
 
 async function registerPlugins(server: Server, options: any = {}) {
   await graphqlPlugin(server, options);
   await server.register([
-    hapiPino,
+    hapiAlivePlugin,
+    // hapiPinoPlugin,
+    // { plugin: loginPagePlugin },
     { plugin: staticFilePlugin },
-    { plugin: backendApi },
-    { plugin: serverSideRenderPlugin },
+    { plugin: mainPagePlugin },
+    { plugin: Inert },
   ]);
-  await server.register(Inert);
 }
 
 export default registerPlugins;

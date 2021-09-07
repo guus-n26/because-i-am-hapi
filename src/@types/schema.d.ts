@@ -14,10 +14,24 @@ export type Scalars = {
 export type Address = {
   __typename?: 'Address';
   street?: Maybe<Scalars['String']>;
+  number?: Maybe<Scalars['Int']>;
+  city?: Maybe<Scalars['String']>;
+  type?: Maybe<Living>;
 };
+
+export enum Living {
+  House = 'House',
+  Garden = 'Garden',
+  Treehouse = 'TREEHOUSE'
+}
 
 export type Query = {
   __typename?: 'Query';
   name?: Maybe<Scalars['String']>;
   address?: Maybe<Address>;
+};
+
+export type Subscription = {
+  __typename?: 'Subscription';
+  numberIncremented?: Maybe<Scalars['Int']>;
 };

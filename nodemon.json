@@ -3,7 +3,7 @@
   "env": {
     "TS_NODE_TRANSPILE_ONLY": true
   },
-  "exec": "yarn build:client --mode=development && yarn codegen && ts-node ./src/server.ts",
+  "exec": "yarn build:client --mode=development && ts-node ./src/server.ts",
   "ext": "ts,tsx,js,jsx,json,graphql",
   "ignore": [
     "test",

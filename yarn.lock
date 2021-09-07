@@ -117,6 +117,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/code-frame@npm:7.12.11":
+  version: 7.12.11
+  resolution: "@babel/code-frame@npm:7.12.11::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40babel%2Fcode-frame%2F-%2Fcode-frame-7.12.11.tgz"
+  dependencies:
+    "@babel/highlight": ^7.10.4
+  checksum: 3963eff3ebfb0e091c7e6f99596ef4b258683e4ba8a134e4e95f77afe85be5c931e184fff6435fb4885d12eba04a5e25532f7fbc292ca13b48e7da943474e2f3
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/code-frame@npm:7.14.5"
@@ -346,6 +355,17 @@ __metadata:
     "@babel/traverse": ^7.14.8
     "@babel/types": ^7.14.8
   checksum: 2f1358c19fc1ee744c183f81b499b73977da7d3d3f7a881d457b235754394a503e4717353f29364bd5feb7fa406b1edd1aab92b5ab0765dba945fb559eeb1c65
+  languageName: node
+  linkType: hard
+
+"@babel/highlight@npm:^7.10.4":
+  version: 7.14.5
+  resolution: "@babel/highlight@npm:7.14.5::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40babel%2Fhighlight%2F-%2Fhighlight-7.14.5.tgz"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.14.5
+    chalk: ^2.0.0
+    js-tokens: ^4.0.0
+  checksum: 4e4b22fb886c939551d73307de16232c186fdb4d8ec8f514541b058feaecdba5234788a0740ca5bcd28777f4108596c39ac4b7463684c63b3812f6071e3fb88f
   languageName: node
   linkType: hard
 
@@ -686,12 +706,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime-corejs3@npm:^7.10.2":
+  version: 7.15.3
+  resolution: "@babel/runtime-corejs3@npm:7.15.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40babel%2Fruntime-corejs3%2F-%2Fruntime-corejs3-7.15.3.tgz"
+  dependencies:
+    core-js-pure: ^3.16.0
+    regenerator-runtime: ^0.13.4
+  checksum: c33952657d0bec71f46c7ea2595297f4fd61e68ebce812a7de4e3a9841d8ac6af61880049f72560fda9396a86de5b06e5ba6a6f11bd9cf688ec7f4b812730c8b
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.0.0":
   version: 7.14.8
   resolution: "@babel/runtime@npm:7.14.8"
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: d2dd0ce51ddab78ac93928b04042425145d0dc8cc2b70150d47934f8703f55702eb0b2894f9bd47f66794ad04d8bb03a6a847d0138fbb7aa0b970b5ccd5cc8b7
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2":
+  version: 7.15.3
+  resolution: "@babel/runtime@npm:7.15.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40babel%2Fruntime%2F-%2Fruntime-7.15.3.tgz"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 2f0b8d2d4e36035ab1d84af0ec26aafa098536870f27c8e07de0a0e398f7a394fdea68a88165535ffb52ded6a68912bdc3450bdf91f229eb132e1c89470789f5
   languageName: node
   linkType: hard
 
@@ -791,6 +830,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/eslintrc@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "@eslint/eslintrc@npm:0.4.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40eslint%2Feslintrc%2F-%2Feslintrc-0.4.3.tgz"
+  dependencies:
+    ajv: ^6.12.4
+    debug: ^4.1.1
+    espree: ^7.3.0
+    globals: ^13.9.0
+    ignore: ^4.0.6
+    import-fresh: ^3.2.1
+    js-yaml: ^3.13.1
+    minimatch: ^3.0.4
+    strip-json-comments: ^3.1.1
+  checksum: 03a7704150b868c318aab6a94d87a33d30dc2ec579d27374575014f06237ba1370ae11178db772f985ef680d469dc237e7b16a1c5d8edaaeb8c3733e7a95a6d3
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/add@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@graphql-codegen/add@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40graphql-codegen%2Fadd%2F-%2Fadd-3.0.0.tgz"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.0.0
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 47722ebe9c5a95004d6f4e006e166cbb1724ca48848d44e651e52facfdb49d95eb76b820d59a70567a9d7633e87c583c05d4eb79b64302dd6c12d6a897cea71f
+  languageName: node
+  linkType: hard
+
 "@graphql-codegen/cli@npm:^2.0.1":
   version: 2.0.1
   resolution: "@graphql-codegen/cli@npm:2.0.1"
@@ -871,6 +939,53 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: 517fb2299b9ba7a56a4bf692812e0c127f635db236bc3f6fd15bf6b338d07278b3b2f73d323df4a40c5dc1a1549c66ab326f3025563b62d354492a68a828abd9
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript-operations@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@graphql-codegen/typescript-operations@npm:2.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40graphql-codegen%2Ftypescript-operations%2F-%2Ftypescript-operations-2.0.1.tgz"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.0.0
+    "@graphql-codegen/typescript": ^2.0.0
+    "@graphql-codegen/visitor-plugin-common": 2.0.0
+    auto-bind: ~4.0.0
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: b6b29a37096f988c170ecaf89ae2c133213a62f967ac00a2545f383d4b3f0a8b78a2f67e15e950e95179110e62d615cb3a33ed92619b88f2ee7ae0ccbb156319
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript-react-apollo@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@graphql-codegen/typescript-react-apollo@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40graphql-codegen%2Ftypescript-react-apollo%2F-%2Ftypescript-react-apollo-3.0.0.tgz"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.0.0
+    "@graphql-codegen/visitor-plugin-common": 2.0.0
+    auto-bind: ~4.0.0
+    change-case-all: 1.0.14
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+    graphql-tag: ^2.0.0
+  checksum: 7551f1afc9b59414e0d44b174071198b8377ec953a32b41b0fa14231bb1cad930fd6d5297bb0dde9dcbbf846526aeaa07a8cc6a12c22ca7d7a9d3f6643a3cc51
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript-resolvers@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@graphql-codegen/typescript-resolvers@npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40graphql-codegen%2Ftypescript-resolvers%2F-%2Ftypescript-resolvers-2.0.0.tgz"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.0.0
+    "@graphql-codegen/typescript": ^2.0.0
+    "@graphql-codegen/visitor-plugin-common": 2.0.0
+    "@graphql-tools/utils": ^8.0.1
+    auto-bind: ~4.0.0
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 184e8759b6ba2e81057c83e6ab8eed23cfb9784548038dd76fba4e2181801faa7187ef93d67baf5d8460a1e4e3b71b61620ff42f9f860a4344e993d61db866af
   languageName: node
   linkType: hard
 
@@ -1260,6 +1375,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/address@npm:2.x.x":
+  version: 2.1.4
+  resolution: "@hapi/address@npm:2.1.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Faddress%2F-%2Faddress-2.1.4.tgz"
+  checksum: 10341c3b650746c79ac2c57118efb05d45d850b33aef82a6f2ba89419fdbf1b6d337c8b085cc9bc1af7a5fb18379c07edaf3be7584426f40bd370ed6de29e965
+  languageName: node
+  linkType: hard
+
 "@hapi/ammo@npm:5.x.x, @hapi/ammo@npm:^5.0.1":
   version: 5.0.1
   resolution: "@hapi/ammo@npm:5.0.1"
@@ -1278,12 +1400,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/basic@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@hapi/basic@npm:6.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Fbasic%2F-%2Fbasic-6.0.0.tgz"
+  dependencies:
+    "@hapi/boom": 9.x.x
+    "@hapi/hoek": 9.x.x
+  checksum: c7c4b6f2a0bcb765c9f19ba56ec6868b51470df8223ada0428bd295d8b40d34832bd30dfdf50cc7bdaa01c9ef2bb009f0a1065fd06bdd0b947b6b83cebc1790a
+  languageName: node
+  linkType: hard
+
 "@hapi/boom@npm:9.x.x, @hapi/boom@npm:^9.0.0, @hapi/boom@npm:^9.1.0, @hapi/boom@npm:^9.1.3":
   version: 9.1.3
   resolution: "@hapi/boom@npm:9.1.3"
   dependencies:
     "@hapi/hoek": 9.x.x
   checksum: b7f54fa3fd4e9ea60c33a4be93ae9cd67cf1b4f000d9feb0393e9f617c5f49a753de66d7ca0048c90c9ca71e722cf1d0ce62e436d8076e69a6943cbf26f2c2f7
+  languageName: node
+  linkType: hard
+
+"@hapi/boom@npm:^7.4.2":
+  version: 7.4.11
+  resolution: "@hapi/boom@npm:7.4.11::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Fboom%2F-%2Fboom-7.4.11.tgz"
+  dependencies:
+    "@hapi/hoek": 8.x.x
+  checksum: ef166e1a764a9574b084d258a315d83fd61070b3ba0f5c16a2a5d716fe3f3fc068ce3c600bcb8bf62c0bad0ab01ba505b81ff93e806091d17e17571bcb76c6d3
   languageName: node
   linkType: hard
 
@@ -1294,6 +1435,13 @@ __metadata:
     "@hapi/boom": 9.x.x
     "@hapi/hoek": 9.x.x
   checksum: 36cb6bacc508ba6bfa1426345316d6e6b8ffade79c347ccbd3ba4d8f9657342c12ac1e28f35380dec22242305b84ccaf385ce80255bcb084bfb9aa83bced513f
+  languageName: node
+  linkType: hard
+
+"@hapi/bourne@npm:1.x.x":
+  version: 1.3.2
+  resolution: "@hapi/bourne@npm:1.3.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Fbourne%2F-%2Fbourne-1.3.2.tgz"
+  checksum: 8403a2e8297fbb49a0e4fca30e874590d96ecaf7165740804037ff30625f3fdea6353d9f7f4422607eb069a3f471900a3037df34285a95135d15c6a8b10094b0
   languageName: node
   linkType: hard
 
@@ -1342,6 +1490,18 @@ __metadata:
   dependencies:
     "@hapi/boom": 9.x.x
   checksum: 62d944412cc84b62280133817c06f2362fc7faac435e69b7c3beda3637a28b6d8789234987d34b9e30833c54d71fc257bac852f26012378c8c2aa50add43ad0d
+  languageName: node
+  linkType: hard
+
+"@hapi/cookie@npm:^11.0.2":
+  version: 11.0.2
+  resolution: "@hapi/cookie@npm:11.0.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Fcookie%2F-%2Fcookie-11.0.2.tgz"
+  dependencies:
+    "@hapi/boom": 9.x.x
+    "@hapi/bounce": 2.x.x
+    "@hapi/hoek": 9.x.x
+    "@hapi/validate": 1.x.x
+  checksum: e7a82d82eddd99fc315add1c4d5a66762b4a7cde9d37e84d645cb4a1f0a31423e2f596e160a7b27d443f837cdedca34689080e04e7feb409cc56c5aa2d1dea05
   languageName: node
   linkType: hard
 
@@ -1398,6 +1558,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/hoek@npm:8.x.x, @hapi/hoek@npm:^8.0.2, @hapi/hoek@npm:^8.3.0":
+  version: 8.5.1
+  resolution: "@hapi/hoek@npm:8.5.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Fhoek%2F-%2Fhoek-8.5.1.tgz"
+  checksum: 8f8ce36be4f5e5d7a712072d4a028a4a95beec7a7da3a7a6e9a0c07d697f04c19b37d93751db352c314ea831f7e2120569a035dc6a351ed8c0444f1d3b275621
+  languageName: node
+  linkType: hard
+
 "@hapi/hoek@npm:9.x.x, @hapi/hoek@npm:^9.0.0, @hapi/hoek@npm:^9.0.4":
   version: 9.2.0
   resolution: "@hapi/hoek@npm:9.2.0"
@@ -1429,6 +1596,18 @@ __metadata:
     "@hapi/cryptiles": 5.x.x
     "@hapi/hoek": 9.x.x
   checksum: ef07abc8a55eb8b60ab0c09d797bb13b39d283260ecdabedc1568c64c47d8c15fe517beed4f76a2b69dac57e6c26cd30ac7612169c41adb8f4c77ea3f58d973d
+  languageName: node
+  linkType: hard
+
+"@hapi/joi@npm:^15.1.0":
+  version: 15.1.1
+  resolution: "@hapi/joi@npm:15.1.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Fjoi%2F-%2Fjoi-15.1.1.tgz"
+  dependencies:
+    "@hapi/address": 2.x.x
+    "@hapi/bourne": 1.x.x
+    "@hapi/hoek": 8.x.x
+    "@hapi/topo": 3.x.x
+  checksum: 5bc3df9d43d4a53c41fd172d2958a4a846dbacbe2a2abe16830059109c436776d7be98144f14af9d328ebd107dbebafe55e00a9032a905aef45aadff988b54bf
   languageName: node
   linkType: hard
 
@@ -1533,6 +1712,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hapi/topo@npm:3.x.x":
+  version: 3.1.6
+  resolution: "@hapi/topo@npm:3.1.6::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40hapi%2Ftopo%2F-%2Ftopo-3.1.6.tgz"
+  dependencies:
+    "@hapi/hoek": ^8.3.0
+  checksum: 34278bc13b4023d6d0d7c913605a254b2d728dc6489cd465269eebaa7d8d2d81cda3f2157398dca87d3cb9e1a8aa8a1158ce2564c71a8e289b807c144e3b4c1e
+  languageName: node
+  linkType: hard
+
 "@hapi/topo@npm:^5.0.0":
   version: 5.1.0
   resolution: "@hapi/topo@npm:5.1.0"
@@ -1569,6 +1757,24 @@ __metadata:
     "@hapi/bourne": 2.x.x
     "@hapi/hoek": 9.x.x
   checksum: 4a9e27b93973b9919bcf6ca9570b502b8391d19056781caeaf84c7f21cc373d9dd389dbcda673816239a6ab42bc98958444258403e5b0615c8ed187f9cd0e25f
+  languageName: node
+  linkType: hard
+
+"@humanwhocodes/config-array@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@humanwhocodes/config-array@npm:0.5.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40humanwhocodes%2Fconfig-array%2F-%2Fconfig-array-0.5.0.tgz"
+  dependencies:
+    "@humanwhocodes/object-schema": ^1.2.0
+    debug: ^4.1.1
+    minimatch: ^3.0.4
+  checksum: 44ee6a9f05d93dd9d5935a006b17572328ba9caff8002442f601736cbda79c580cc0f5a49ce9eb88fbacc5c3a6b62098357c2e95326cd17bb9f1a6c61d6e95e7
+  languageName: node
+  linkType: hard
+
+"@humanwhocodes/object-schema@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@humanwhocodes/object-schema@npm:1.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40humanwhocodes%2Fobject-schema%2F-%2Fobject-schema-1.2.0.tgz"
+  checksum: 40b75480376de8104d65f7c44a7dd76d30fb57823ca8ba3a3239b2b568323be894d93440578a72fd8e5e2cc3df3577ce0d2f0fe308b990dd51cf35392bf3c9a2
   languageName: node
   linkType: hard
 
@@ -2150,6 +2356,105 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/eslint-plugin@npm:^4.29.2":
+  version: 4.29.2
+  resolution: "@typescript-eslint/eslint-plugin@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-4.29.2.tgz"
+  dependencies:
+    "@typescript-eslint/experimental-utils": 4.29.2
+    "@typescript-eslint/scope-manager": 4.29.2
+    debug: ^4.3.1
+    functional-red-black-tree: ^1.0.1
+    regexpp: ^3.1.0
+    semver: ^7.3.5
+    tsutils: ^3.21.0
+  peerDependencies:
+    "@typescript-eslint/parser": ^4.0.0
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 3d3646059daa3d95200d71945a1ec8daebf62c7fedc3f29e1bece87bee9d689b06856fb18a8c55917f9c0bb5e86ddc8bc4c4f65f171e7d5784756dd59e3ff51d
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/experimental-utils@npm:4.29.2":
+  version: 4.29.2
+  resolution: "@typescript-eslint/experimental-utils@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Fexperimental-utils%2F-%2Fexperimental-utils-4.29.2.tgz"
+  dependencies:
+    "@types/json-schema": ^7.0.7
+    "@typescript-eslint/scope-manager": 4.29.2
+    "@typescript-eslint/types": 4.29.2
+    "@typescript-eslint/typescript-estree": 4.29.2
+    eslint-scope: ^5.1.1
+    eslint-utils: ^3.0.0
+  peerDependencies:
+    eslint: "*"
+  checksum: e07b6b58f386ba84801d10bfe494548c3af20448c2f5596b77d13ba8621345ced4e1c6cf946dcf118c1e8566e0eed8284200f3f3a96f89aa7f367d9cdf6549a3
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^4.29.2, @typescript-eslint/parser@npm:^4.4.1":
+  version: 4.29.2
+  resolution: "@typescript-eslint/parser@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Fparser%2F-%2Fparser-4.29.2.tgz"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.29.2
+    "@typescript-eslint/types": 4.29.2
+    "@typescript-eslint/typescript-estree": 4.29.2
+    debug: ^4.3.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 59f9727cea89c208fb31433c24dd7c1b4f2feb3af831b9320f4577f7b84f014f803864d4660b0f6bd16a4026d7ecd22b88523feb8c1593ef4a0a43ca9ea09c33
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/scope-manager@npm:4.29.2":
+  version: 4.29.2
+  resolution: "@typescript-eslint/scope-manager@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Fscope-manager%2F-%2Fscope-manager-4.29.2.tgz"
+  dependencies:
+    "@typescript-eslint/types": 4.29.2
+    "@typescript-eslint/visitor-keys": 4.29.2
+  checksum: f89d11cf7ce28c37a913db432d3dd2c4e5f5bc431bac205dd55c3d49704be691a28d5f27ae96fde7feee23d3e80192d7aff3d8350aef53b415e5b0b53cd965d7
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/types@npm:4.29.2":
+  version: 4.29.2
+  resolution: "@typescript-eslint/types@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-4.29.2.tgz"
+  checksum: 0bcab66bb1848e2361bb366abebe1f94baa56d7d2058b62467f14c054b969b72d1aa17717a52c11f48e9cfb50846f0e227e49ccc7f06ff750b9eb28ca8b064de
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/typescript-estree@npm:4.29.2":
+  version: 4.29.2
+  resolution: "@typescript-eslint/typescript-estree@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-4.29.2.tgz"
+  dependencies:
+    "@typescript-eslint/types": 4.29.2
+    "@typescript-eslint/visitor-keys": 4.29.2
+    debug: ^4.3.1
+    globby: ^11.0.3
+    is-glob: ^4.0.1
+    semver: ^7.3.5
+    tsutils: ^3.21.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 90342d27f3f0837ad39f9b7e7d7c3c0b6de9c5b0770f5a18d490ebaf7be78efa65ba46ce0ca3004ad946ca1adc5865c5d3ba3b049c95b3b193bfdf0eb5e23095
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/visitor-keys@npm:4.29.2":
+  version: 4.29.2
+  resolution: "@typescript-eslint/visitor-keys@npm:4.29.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-4.29.2.tgz"
+  dependencies:
+    "@typescript-eslint/types": 4.29.2
+    eslint-visitor-keys: ^2.0.0
+  checksum: 34185d8c6466340aba746d69b36d357da2d06577d73f58358648c142bd0f181d7fae01ca1138188a665ef074ea7e1bc6306ef9d50f29914c8bcea4e9ea1f82f2
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.11.1":
   version: 1.11.1
   resolution: "@webassemblyjs/ast@npm:1.11.1"
@@ -2417,6 +2722,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn-jsx@npm:^5.3.1":
+  version: 5.3.2
+  resolution: "acorn-jsx@npm:5.3.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Facorn-jsx%2F-%2Facorn-jsx-5.3.2.tgz"
+  peerDependencies:
+    acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: c3d3b2a89c9a056b205b69530a37b972b404ee46ec8e5b341666f9513d3163e2a4f214a71f4dfc7370f5a9c07472d2fd1c11c91c3f03d093e37637d95da98950
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^7.4.0":
+  version: 7.4.1
+  resolution: "acorn@npm:7.4.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Facorn%2F-%2Facorn-7.4.1.tgz"
+  bin:
+    acorn: bin/acorn
+  checksum: 1860f23c2107c910c6177b7b7be71be350db9e1080d814493fae143ae37605189504152d1ba8743ba3178d0b37269ce1ffc42b101547fdc1827078f82671e407
+  languageName: node
+  linkType: hard
+
 "acorn@npm:^8.4.1":
   version: 8.4.1
   resolution: "acorn@npm:8.4.1"
@@ -2474,6 +2797,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv@npm:^6.10.0, ajv@npm:^6.12.4":
+  version: 6.12.6
+  resolution: "ajv@npm:6.12.6::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fajv%2F-%2Fajv-6.12.6.tgz"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    fast-json-stable-stringify: ^2.0.0
+    json-schema-traverse: ^0.4.1
+    uri-js: ^4.2.2
+  checksum: 874972efe5c4202ab0a68379481fbd3d1b5d0a7bd6d3cc21d40d3536ebff3352a2a1fabb632d4fd2cc7fe4cbdcd5ed6782084c9bbf7f32a1536d18f9da5007d4
+  languageName: node
+  linkType: hard
+
 "ajv@npm:^6.12.5":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
@@ -2486,12 +2821,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv@npm:^8.0.1":
+  version: 8.6.2
+  resolution: "ajv@npm:8.6.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fajv%2F-%2Fajv-8.6.2.tgz"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    json-schema-traverse: ^1.0.0
+    require-from-string: ^2.0.2
+    uri-js: ^4.2.2
+  checksum: b86d6cb86c69abbd8ce71ab7d4ff272660bf6d34fa9fbe770f73e54da59d531b2546692e36e2b35bbcfb11d20db774b4c09189671335185b8c799d65194e5169
+  languageName: node
+  linkType: hard
+
 "ansi-align@npm:^3.0.0":
   version: 3.0.0
   resolution: "ansi-align@npm:3.0.0"
   dependencies:
     string-width: ^3.0.0
   checksum: 6bc5f3712d28a899063845a15c5da75b2f350dda8ffac6098581619b80a85d249cdd23c3dc7b596cd31e44477382bcdedff47e31201eaa10bb9708c9fce45330
+  languageName: node
+  linkType: hard
+
+"ansi-colors@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "ansi-colors@npm:4.1.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fansi-colors%2F-%2Fansi-colors-4.1.1.tgz"
+  checksum: 138d04a51076cb085da0a7e2d000c5c0bb09f6e772ed5c65c53cb118d37f6c5f1637506d7155fb5f330f0abcf6f12fa2e489ac3f8cdab9da393bf1bb4f9a32b0
   languageName: node
   linkType: hard
 
@@ -2810,6 +3164,15 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"argparse@npm:^1.0.7":
+  version: 1.0.10
+  resolution: "argparse@npm:1.0.10::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fargparse%2F-%2Fargparse-1.0.10.tgz"
+  dependencies:
+    sprintf-js: ~1.0.2
+  checksum: 7ca6e45583a28de7258e39e13d81e925cfa25d7d4aacbf806a382d3c02fcb13403a07fb8aeef949f10a7cfe4a62da0e2e807b348a5980554cc28ee573ef95945
+  languageName: node
+  linkType: hard
+
 "argparse@npm:^2.0.1":
   version: 2.0.1
   resolution: "argparse@npm:2.0.1"
@@ -2829,10 +3192,44 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"aria-query@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "aria-query@npm:4.2.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Faria-query%2F-%2Faria-query-4.2.2.tgz"
+  dependencies:
+    "@babel/runtime": ^7.10.2
+    "@babel/runtime-corejs3": ^7.10.2
+  checksum: 38401a9a400f26f3dcc24b84997461a16b32869a9893d323602bed8da40a8bcc0243b8d2880e942249a1496cea7a7de769e93d21c0baa439f01e1ee936fed665
+  languageName: node
+  linkType: hard
+
+"array-includes@npm:^3.1.1, array-includes@npm:^3.1.2, array-includes@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "array-includes@npm:3.1.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Farray-includes%2F-%2Farray-includes-3.1.3.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.0-next.2
+    get-intrinsic: ^1.1.1
+    is-string: ^1.0.5
+  checksum: eaab8812412b5ec921c8fe678a9d61f501b12f6c72e271e0e8652fe7f4145276cc7ad79ff303ac4ed69cbf5135155bfb092b1b6d552e423e75106d1c887da150
+  languageName: node
+  linkType: hard
+
 "array-union@npm:^2.1.0":
   version: 2.1.0
   resolution: "array-union@npm:2.1.0"
   checksum: 5bee12395cba82da674931df6d0fea23c4aa4660cb3b338ced9f828782a65caa232573e6bf3968f23e0c5eb301764a382cef2f128b170a9dc59de0e36c39f98d
+  languageName: node
+  linkType: hard
+
+"array.prototype.flat@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "array.prototype.flat@npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Farray.prototype.flat%2F-%2Farray.prototype.flat-1.2.4.tgz"
+  dependencies:
+    call-bind: ^1.0.0
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.0-next.1
+  checksum: 1ec5d9887ae45e70e4b993e801b440ae5ddcd0d2c6d1dbe214c311e91436152f510916bdac82b066693544b9801a3c510dfbec8a278ababf8de7eb0bde74636f
   languageName: node
   linkType: hard
 
@@ -2852,6 +3249,20 @@ apollo-server-hapi@2.25.2:
   version: 2.0.6
   resolution: "asap@npm:2.0.6"
   checksum: b296c92c4b969e973260e47523207cd5769abd27c245a68c26dc7a0fe8053c55bb04360237cb51cab1df52be939da77150ace99ad331fb7fb13b3423ed73ff3d
+  languageName: node
+  linkType: hard
+
+"ast-types-flow@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "ast-types-flow@npm:0.0.7::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fast-types-flow%2F-%2Fast-types-flow-0.0.7.tgz"
+  checksum: a26dcc2182ffee111cad7c471759b0bda22d3b7ebacf27c348b22c55f16896b18ab0a4d03b85b4020dce7f3e634b8f00b593888f622915096ea1927fa51866c4
+  languageName: node
+  linkType: hard
+
+"astral-regex@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "astral-regex@npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fastral-regex%2F-%2Fastral-regex-2.0.0.tgz"
+  checksum: 876231688c66400473ba505731df37ea436e574dd524520294cc3bbc54ea40334865e01fa0d074d74d036ee874ee7e62f486ea38bc421ee8e6a871c06f011766
   languageName: node
   linkType: hard
 
@@ -2882,6 +3293,20 @@ apollo-server-hapi@2.25.2:
   version: 4.0.0
   resolution: "auto-bind@npm:4.0.0"
   checksum: 00cad71cce5742faccb7dd65c1b55ebc4f45add4b0c9a1547b10b05bab22813230133b0c892c67ba3eb969a4524710c5e43cc45c72898ec84e56f3a596e7a04f
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.0.2":
+  version: 4.3.2
+  resolution: "axe-core@npm:4.3.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Faxe-core%2F-%2Faxe-core-4.3.2.tgz"
+  checksum: ecedf159c4f24fe9c64689890e9b95082f1dab362e57ecd74d2d28573fca2f6b3b915784ccb46d9c3f1506c38524144066066c6d8759d0c5628d22ba3cdc57e0
+  languageName: node
+  linkType: hard
+
+"axobject-query@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "axobject-query@npm:2.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Faxobject-query%2F-%2Faxobject-query-2.2.0.tgz"
+  checksum: 96b8c7d807ca525f41ad9b286186e2089b561ba63a6d36c3e7d73dc08150714660995c7ad19cda05784458446a0793b45246db45894631e13853f48c1aa3117f
   languageName: node
   linkType: hard
 
@@ -2966,21 +3391,38 @@ apollo-server-hapi@2.25.2:
     "@apollo/client": ^3.3.21
     "@apollo/react-hooks": ^4.0.0
     "@apollo/react-ssr": ^4.0.0
+    "@graphql-codegen/add": ^3.0.0
     "@graphql-codegen/cli": ^2.0.1
     "@graphql-codegen/typescript": ^2.0.0
+    "@graphql-codegen/typescript-operations": ^2.0.1
+    "@graphql-codegen/typescript-react-apollo": ^3.0.0
+    "@graphql-codegen/typescript-resolvers": ^2.0.0
     "@graphql-tools/graphql-file-loader": ^7.0.2
     "@graphql-tools/load": ^7.1.4
     "@graphql-tools/webpack-loader": ^6.5.0
+    "@hapi/basic": ^6.0.0
     "@hapi/boom": ^9.1.3
+    "@hapi/cookie": ^11.0.2
     "@hapi/hapi": ^20.1.5
     "@hapi/inert": ^6.0.3
     "@types/hapi__hapi": ^20.0.9
     "@types/hapi__inert": ^5.2.3
     "@types/node-fetch": ^2.5.11
     "@types/react-dom": ^17.0.9
+    "@typescript-eslint/eslint-plugin": ^4.29.2
+    "@typescript-eslint/parser": ^4.29.2
     apollo-server-hapi: "patch:apollo-server-hapi@2.25.2#./patches/apollo-server-hapi.patch"
+    eslint: ^7.32.0
+    eslint-config-airbnb: ^18.2.1
+    eslint-config-airbnb-typescript: ^12.3.1
+    eslint-plugin-import: ^2.24.0
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-react: ^7.24.0
+    eslint-plugin-react-hooks: ^4.2.0
     graphql: ^15.5.1
     graphql-import-node: ^0.0.4
+    graphql-subscriptions: ^1.2.1
+    hapi-alive: ^2.0.4
     hapi-pino: ^8.3.0
     joi: ^17.4.0
     node-fetch: ^2.6.1
@@ -2989,6 +3431,7 @@ apollo-server-hapi@2.25.2:
     react-dom: ^17.0.2
     requirejs: ^2.3.6
     rimraf: ^3.0.2
+    subscriptions-transport-ws: ^0.9.19
     ts-loader: ^9.2.3
     typescript: ^4.3.5
     webpack: ^5.44.0
@@ -3542,6 +3985,13 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"confusing-browser-globals@npm:^1.0.10":
+  version: 1.0.10
+  resolution: "confusing-browser-globals@npm:1.0.10::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fconfusing-browser-globals%2F-%2Fconfusing-browser-globals-1.0.10.tgz"
+  checksum: 7ccdc44c2ca419cf6576c3e4336106e18d1c5337f547e461342f51aec4a10f96fdfe45414b522be3c7d24ea0b62bf4372cd37768022e4d6161707ffb2c0987e6
+  languageName: node
+  linkType: hard
+
 "console-control-strings@npm:^1.0.0, console-control-strings@npm:~1.1.0":
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fconsole-control-strings%2F-%2Fconsole-control-strings-1.1.0.tgz"
@@ -3573,6 +4023,13 @@ apollo-server-hapi@2.25.2:
   version: 3.15.2
   resolution: "core-js-pure@npm:3.15.2"
   checksum: b3f33de3d3ea8885784e0c817b4a84a9df0efa15d0504153e3e0243610c7cae5b9ef4c69c96ad238914217aae7ca5458d02239985a1d8613d003f32eab85f8e4
+  languageName: node
+  linkType: hard
+
+"core-js-pure@npm:^3.16.0":
+  version: 3.16.2
+  resolution: "core-js-pure@npm:3.16.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fcore-js-pure%2F-%2Fcore-js-pure-3.16.2.tgz"
+  checksum: e44acd945b78f6faf96f38059a5347eb236eaae9b2fa897e58f52b12b64e5233c2b1243e953b828ddec62c215c5f911ac2d3c9276974ded1c04331961d877869
   languageName: node
   linkType: hard
 
@@ -3621,6 +4078,17 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"cross-spawn@npm:^7.0.2":
+  version: 7.0.3
+  resolution: "cross-spawn@npm:7.0.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fcross-spawn%2F-%2Fcross-spawn-7.0.3.tgz"
+  dependencies:
+    path-key: ^3.1.0
+    shebang-command: ^2.0.0
+    which: ^2.0.1
+  checksum: 671cc7c7288c3a8406f3c69a3ae2fc85555c04169e9d611def9a675635472614f1c0ed0ef80955d5b6d4e724f6ced67f0ad1bb006c2ea643488fcfef994d7f52
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -3650,6 +4118,13 @@ apollo-server-hapi@2.25.2:
   version: 3.0.8
   resolution: "csstype@npm:3.0.8"
   checksum: 5939a003858a31a32cbc52a8f45496aa0c2bcb4629b21c5bc14a7ddcac1a3d4adfd655f56843dc14940f60563378e9444af2c9c373b3f212601b9eeb6740b8db
+  languageName: node
+  linkType: hard
+
+"damerau-levenshtein@npm:^1.0.6":
+  version: 1.0.7
+  resolution: "damerau-levenshtein@npm:1.0.7::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdamerau-levenshtein%2F-%2Fdamerau-levenshtein-1.0.7.tgz"
+  checksum: ec8161cb381523e0db9b5c9b64863736da3197808b6fdc4a3a2ca764c0b4357e9232a4c5592220fb18755a91240b8fee7b13ab1b269fbbdc5f68c36f0053aceb
   languageName: node
   linkType: hard
 
@@ -3702,12 +4177,42 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"debug@npm:^2.6.9":
+  version: 2.6.9
+  resolution: "debug@npm:2.6.9::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdebug%2F-%2Fdebug-2.6.9.tgz"
+  dependencies:
+    ms: 2.0.0
+  checksum: d2f51589ca66df60bf36e1fa6e4386b318c3f1e06772280eea5b1ae9fd3d05e9c2b7fd8a7d862457d00853c75b00451aa2d7459b924629ee385287a650f58fe6
+  languageName: node
+  linkType: hard
+
 "debug@npm:^3.2.6":
   version: 3.2.7
   resolution: "debug@npm:3.2.7"
   dependencies:
     ms: ^2.1.1
   checksum: b3d8c5940799914d30314b7c3304a43305fd0715581a919dacb8b3176d024a782062368405b47491516d2091d6462d4d11f2f4974a405048094f8bfebfa3071c
+  languageName: node
+  linkType: hard
+
+"debug@npm:^3.2.7":
+  version: 3.2.7
+  resolution: "debug@npm:3.2.7::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdebug%2F-%2Fdebug-3.2.7.tgz"
+  dependencies:
+    ms: ^2.1.1
+  checksum: b3d8c5940799914d30314b7c3304a43305fd0715581a919dacb8b3176d024a782062368405b47491516d2091d6462d4d11f2f4974a405048094f8bfebfa3071c
+  languageName: node
+  linkType: hard
+
+"debug@npm:^4.0.1, debug@npm:^4.1.1":
+  version: 4.3.2
+  resolution: "debug@npm:4.3.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdebug%2F-%2Fdebug-4.3.2.tgz"
+  dependencies:
+    ms: 2.1.2
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 820ea160e267e23c953c9ed87e7ad93494d8cda2f7349af5e7e3bb236d23707ee3022f477d5a7d2ee86ef2bf7d60aa9ab22d1f58080d7deb9dccd073585e1e43
   languageName: node
   linkType: hard
 
@@ -3731,6 +4236,13 @@ apollo-server-hapi@2.25.2:
   version: 0.6.0
   resolution: "deep-extend@npm:0.6.0"
   checksum: 7be7e5a8d468d6b10e6a67c3de828f55001b6eb515d014f7aeb9066ce36bd5717161eb47d6a0f7bed8a9083935b465bc163ee2581c8b128d29bf61092fdf57a7
+  languageName: node
+  linkType: hard
+
+"deep-is@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "deep-is@npm:0.1.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdeep-is%2F-%2Fdeep-is-0.1.3.tgz"
+  checksum: c15b04c3848a89880c94e25b077c19b47d9a30dd99048e70e5f95d943e7b246bee1da0c1376b56b01bc045be2cae7d9b1c856e68e47e9805634327de7c6cb6d5
   languageName: node
   linkType: hard
 
@@ -3824,6 +4336,24 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"doctrine@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "doctrine@npm:2.1.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdoctrine%2F-%2Fdoctrine-2.1.0.tgz"
+  dependencies:
+    esutils: ^2.0.2
+  checksum: a45e277f7feaed309fe658ace1ff286c6e2002ac515af0aaf37145b8baa96e49899638c7cd47dccf84c3d32abfc113246625b3ac8f552d1046072adee13b0dc8
+  languageName: node
+  linkType: hard
+
+"doctrine@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "doctrine@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fdoctrine%2F-%2Fdoctrine-3.0.0.tgz"
+  dependencies:
+    esutils: ^2.0.2
+  checksum: fd7673ca77fe26cd5cba38d816bc72d641f500f1f9b25b83e8ce28827fe2da7ad583a8da26ab6af85f834138cf8dae9f69b0cd6ab925f52ddab1754db44d99ce
+  languageName: node
+  linkType: hard
+
 "dot-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "dot-case@npm:3.0.4"
@@ -3901,6 +4431,13 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"emoji-regex@npm:^9.0.0":
+  version: 9.2.2
+  resolution: "emoji-regex@npm:9.2.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Femoji-regex%2F-%2Femoji-regex-9.2.2.tgz"
+  checksum: 8487182da74aabd810ac6d6f1994111dfc0e331b01271ae01ec1eb0ad7b5ecc2bbbbd2f053c05cb55a1ac30449527d819bbfbf0e3de1023db308cbcb47f86601
+  languageName: node
+  linkType: hard
+
 "encoding@npm:^0.1.12":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fencoding%2F-%2Fencoding-0.1.13.tgz"
@@ -3926,6 +4463,15 @@ apollo-server-hapi@2.25.2:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
   checksum: 6e871ec5b183220dbcdaff8580cbdacee5425e321790e5846abd1b573d20d2bcb37f73ee983fd10c6d6878d31a2d08e234e72fc91a81236d64623ee6ba7d6611
+  languageName: node
+  linkType: hard
+
+"enquirer@npm:^2.3.5":
+  version: 2.3.6
+  resolution: "enquirer@npm:2.3.6::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fenquirer%2F-%2Fenquirer-2.3.6.tgz"
+  dependencies:
+    ansi-colors: ^4.1.1
+  checksum: 1c0911e14a6f8d26721c91e01db06092a5f7675159f0261d69c403396a385afd13dd76825e7678f66daffa930cfaa8d45f506fb35f818a2788463d022af1b884
   languageName: node
   linkType: hard
 
@@ -4010,6 +4556,31 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"es-abstract@npm:^1.18.2":
+  version: 1.18.5
+  resolution: "es-abstract@npm:1.18.5::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fes-abstract%2F-%2Fes-abstract-1.18.5.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    es-to-primitive: ^1.2.1
+    function-bind: ^1.1.1
+    get-intrinsic: ^1.1.1
+    has: ^1.0.3
+    has-symbols: ^1.0.2
+    internal-slot: ^1.0.3
+    is-callable: ^1.2.3
+    is-negative-zero: ^2.0.1
+    is-regex: ^1.1.3
+    is-string: ^1.0.6
+    object-inspect: ^1.11.0
+    object-keys: ^1.1.1
+    object.assign: ^4.1.2
+    string.prototype.trimend: ^1.0.4
+    string.prototype.trimstart: ^1.0.4
+    unbox-primitive: ^1.0.1
+  checksum: 9b64145b077863c9572dd8cd50e190833d241a135505ec422efe829c5fc085c475e6daca378b2b45acc288f28bf85e942b3ef2cb0f69daa250240781e1081cc4
+  languageName: node
+  linkType: hard
+
 "es-module-lexer@npm:^0.7.1":
   version: 0.7.1
   resolution: "es-module-lexer@npm:0.7.1"
@@ -4049,6 +4620,152 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"escape-string-regexp@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "escape-string-regexp@npm:4.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fescape-string-regexp%2F-%2Fescape-string-regexp-4.0.0.tgz"
+  checksum: 98b48897d93060f2322108bf29db0feba7dd774be96cd069458d1453347b25ce8682ecc39859d4bca2203cc0ab19c237bcc71755eff49a0f8d90beadeeba5cc5
+  languageName: node
+  linkType: hard
+
+"eslint-config-airbnb-base@npm:^14.2.0, eslint-config-airbnb-base@npm:^14.2.1":
+  version: 14.2.1
+  resolution: "eslint-config-airbnb-base@npm:14.2.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-config-airbnb-base%2F-%2Feslint-config-airbnb-base-14.2.1.tgz"
+  dependencies:
+    confusing-browser-globals: ^1.0.10
+    object.assign: ^4.1.2
+    object.entries: ^1.1.2
+  peerDependencies:
+    eslint: ^5.16.0 || ^6.8.0 || ^7.2.0
+    eslint-plugin-import: ^2.22.1
+  checksum: 858bea748a3c8685b52fcf2488e6a0b964022f8387f4ee1e69cb707d4fda2a409f09eb8eea658bcd83fae3519967d10208ba7576dd3d3202b8cf0b9d1a6e21eb
+  languageName: node
+  linkType: hard
+
+"eslint-config-airbnb-typescript@npm:^12.3.1":
+  version: 12.3.1
+  resolution: "eslint-config-airbnb-typescript@npm:12.3.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-config-airbnb-typescript%2F-%2Feslint-config-airbnb-typescript-12.3.1.tgz"
+  dependencies:
+    "@typescript-eslint/parser": ^4.4.1
+    eslint-config-airbnb: ^18.2.0
+    eslint-config-airbnb-base: ^14.2.0
+  checksum: 2aac9d736c0bcb778a8b6894aa7e061f2454895e0e4cc7bc1247074c4c54d777212f9523539b57b49c2e09abe64f0b95d8571196f04e471db9d764f88aff697a
+  languageName: node
+  linkType: hard
+
+"eslint-config-airbnb@npm:^18.2.0, eslint-config-airbnb@npm:^18.2.1":
+  version: 18.2.1
+  resolution: "eslint-config-airbnb@npm:18.2.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-config-airbnb%2F-%2Feslint-config-airbnb-18.2.1.tgz"
+  dependencies:
+    eslint-config-airbnb-base: ^14.2.1
+    object.assign: ^4.1.2
+    object.entries: ^1.1.2
+  peerDependencies:
+    eslint: ^5.16.0 || ^6.8.0 || ^7.2.0
+    eslint-plugin-import: ^2.22.1
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-react: ^7.21.5
+    eslint-plugin-react-hooks: ^4 || ^3 || ^2.3.0 || ^1.7.0
+  checksum: ea11cd0006912f7086fb278e03180da4bc2378cf4e93b1dd970775d8e9b50fd11a64209bdc0ed17654d29abe4ccfa19baa4d1e1e5bd3eb660fcf4798ba2810d2
+  languageName: node
+  linkType: hard
+
+"eslint-import-resolver-node@npm:^0.3.5":
+  version: 0.3.6
+  resolution: "eslint-import-resolver-node@npm:0.3.6::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-import-resolver-node%2F-%2Feslint-import-resolver-node-0.3.6.tgz"
+  dependencies:
+    debug: ^3.2.7
+    resolve: ^1.20.0
+  checksum: 6266733af1e112970e855a5bcc2d2058fb5ae16ad2a6d400705a86b29552b36131ffc5581b744c23d550de844206fb55e9193691619ee4dbf225c4bde526b1c8
+  languageName: node
+  linkType: hard
+
+"eslint-module-utils@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "eslint-module-utils@npm:2.6.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-module-utils%2F-%2Feslint-module-utils-2.6.2.tgz"
+  dependencies:
+    debug: ^3.2.7
+    pkg-dir: ^2.0.0
+  checksum: 814591f494e4f4b04c1af0fde2a679e7a7664a5feb51175e02ba96d671e34ec60cb1835d174508eb81c07a6c92c243f84c6349f4169b3bec1a8dbdd36a0934f3
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-import@npm:^2.24.0":
+  version: 2.24.0
+  resolution: "eslint-plugin-import@npm:2.24.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-plugin-import%2F-%2Feslint-plugin-import-2.24.0.tgz"
+  dependencies:
+    array-includes: ^3.1.3
+    array.prototype.flat: ^1.2.4
+    debug: ^2.6.9
+    doctrine: ^2.1.0
+    eslint-import-resolver-node: ^0.3.5
+    eslint-module-utils: ^2.6.2
+    find-up: ^2.0.0
+    has: ^1.0.3
+    is-core-module: ^2.4.0
+    minimatch: ^3.0.4
+    object.values: ^1.1.3
+    pkg-up: ^2.0.0
+    read-pkg-up: ^3.0.0
+    resolve: ^1.20.0
+    tsconfig-paths: ^3.9.0
+  peerDependencies:
+    eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
+  checksum: 79fb1094197cd1dc720725bd29e5c5fe7d123fd9dd31eb182849993a81a8c18e2bfbc4d267a2caabe02bd4d21aafb1eca1da2f55aca7e5df99fd8ba908e7b869
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-jsx-a11y@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "eslint-plugin-jsx-a11y@npm:6.4.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-plugin-jsx-a11y%2F-%2Feslint-plugin-jsx-a11y-6.4.1.tgz"
+  dependencies:
+    "@babel/runtime": ^7.11.2
+    aria-query: ^4.2.2
+    array-includes: ^3.1.1
+    ast-types-flow: ^0.0.7
+    axe-core: ^4.0.2
+    axobject-query: ^2.2.0
+    damerau-levenshtein: ^1.0.6
+    emoji-regex: ^9.0.0
+    has: ^1.0.3
+    jsx-ast-utils: ^3.1.0
+    language-tags: ^1.0.5
+  peerDependencies:
+    eslint: ^3 || ^4 || ^5 || ^6 || ^7
+  checksum: 30326276385b6029754fbca0a25140be0f2f84d263b38f794651acf973399ea316ab1b9d69dffb9b9807d2b47592ba4bc271a242edbb15abfc05d07b08060a7e
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-react-hooks@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "eslint-plugin-react-hooks@npm:4.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.2.0.tgz"
+  peerDependencies:
+    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+  checksum: ead5c5be3ded82a0cf295b064376adb1998a43e2262b605eecc0efc88283dec4e159ca39307fafb3d8e661dd08e5a4c8cdfed97eea78f923954f72bad6e20397
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-react@npm:^7.24.0":
+  version: 7.24.0
+  resolution: "eslint-plugin-react@npm:7.24.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-plugin-react%2F-%2Feslint-plugin-react-7.24.0.tgz"
+  dependencies:
+    array-includes: ^3.1.3
+    array.prototype.flatmap: ^1.2.4
+    doctrine: ^2.1.0
+    has: ^1.0.3
+    jsx-ast-utils: ^2.4.1 || ^3.0.0
+    minimatch: ^3.0.4
+    object.entries: ^1.1.4
+    object.fromentries: ^2.0.4
+    object.values: ^1.1.4
+    prop-types: ^15.7.2
+    resolve: ^2.0.0-next.3
+    string.prototype.matchall: ^4.0.5
+  peerDependencies:
+    eslint: ^3 || ^4 || ^5 || ^6 || ^7
+  checksum: bf844f98d93f3617fbd03df4be4f4c9e8e49ea035678762b73a28df730e9518d5ac636293f6326b41b4a0678f9dfa059ce559f6652c7a2d914d477ec3a389619
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -4056,6 +4773,130 @@ apollo-server-hapi@2.25.2:
     esrecurse: ^4.3.0
     estraverse: ^4.1.1
   checksum: 47e4b6a3f0cc29c7feedee6c67b225a2da7e155802c6ea13bbef4ac6b9e10c66cd2dcb987867ef176292bf4e64eccc680a49e35e9e9c669f4a02bac17e86abdb
+  languageName: node
+  linkType: hard
+
+"eslint-scope@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "eslint-scope@npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-scope%2F-%2Feslint-scope-5.1.1.tgz"
+  dependencies:
+    esrecurse: ^4.3.0
+    estraverse: ^4.1.1
+  checksum: 47e4b6a3f0cc29c7feedee6c67b225a2da7e155802c6ea13bbef4ac6b9e10c66cd2dcb987867ef176292bf4e64eccc680a49e35e9e9c669f4a02bac17e86abdb
+  languageName: node
+  linkType: hard
+
+"eslint-utils@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "eslint-utils@npm:2.1.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-utils%2F-%2Feslint-utils-2.1.0.tgz"
+  dependencies:
+    eslint-visitor-keys: ^1.1.0
+  checksum: 27500938f348da42100d9e6ad03ae29b3de19ba757ae1a7f4a087bdcf83ac60949bbb54286492ca61fac1f5f3ac8692dd21537ce6214240bf95ad0122f24d71d
+  languageName: node
+  linkType: hard
+
+"eslint-utils@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-utils@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-utils%2F-%2Feslint-utils-3.0.0.tgz"
+  dependencies:
+    eslint-visitor-keys: ^2.0.0
+  peerDependencies:
+    eslint: ">=5"
+  checksum: 0668fe02f5adab2e5a367eee5089f4c39033af20499df88fe4e6aba2015c20720404d8c3d6349b6f716b08fdf91b9da4e5d5481f265049278099c4c836ccb619
+  languageName: node
+  linkType: hard
+
+"eslint-visitor-keys@npm:^1.1.0, eslint-visitor-keys@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "eslint-visitor-keys@npm:1.3.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-visitor-keys%2F-%2Feslint-visitor-keys-1.3.0.tgz"
+  checksum: 37a19b712f42f4c9027e8ba98c2b06031c17e0c0a4c696cd429bd9ee04eb43889c446f2cd545e1ff51bef9593fcec94ecd2c2ef89129fcbbf3adadbef520376a
+  languageName: node
+  linkType: hard
+
+"eslint-visitor-keys@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "eslint-visitor-keys@npm:2.1.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint-visitor-keys%2F-%2Feslint-visitor-keys-2.1.0.tgz"
+  checksum: e3081d7dd2611a35f0388bbdc2f5da60b3a3c5b8b6e928daffff7391146b434d691577aa95064c8b7faad0b8a680266bcda0a42439c18c717b80e6718d7e267d
+  languageName: node
+  linkType: hard
+
+"eslint@npm:^7.32.0":
+  version: 7.32.0
+  resolution: "eslint@npm:7.32.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Feslint%2F-%2Feslint-7.32.0.tgz"
+  dependencies:
+    "@babel/code-frame": 7.12.11
+    "@eslint/eslintrc": ^0.4.3
+    "@humanwhocodes/config-array": ^0.5.0
+    ajv: ^6.10.0
+    chalk: ^4.0.0
+    cross-spawn: ^7.0.2
+    debug: ^4.0.1
+    doctrine: ^3.0.0
+    enquirer: ^2.3.5
+    escape-string-regexp: ^4.0.0
+    eslint-scope: ^5.1.1
+    eslint-utils: ^2.1.0
+    eslint-visitor-keys: ^2.0.0
+    espree: ^7.3.1
+    esquery: ^1.4.0
+    esutils: ^2.0.2
+    fast-deep-equal: ^3.1.3
+    file-entry-cache: ^6.0.1
+    functional-red-black-tree: ^1.0.1
+    glob-parent: ^5.1.2
+    globals: ^13.6.0
+    ignore: ^4.0.6
+    import-fresh: ^3.0.0
+    imurmurhash: ^0.1.4
+    is-glob: ^4.0.0
+    js-yaml: ^3.13.1
+    json-stable-stringify-without-jsonify: ^1.0.1
+    levn: ^0.4.1
+    lodash.merge: ^4.6.2
+    minimatch: ^3.0.4
+    natural-compare: ^1.4.0
+    optionator: ^0.9.1
+    progress: ^2.0.0
+    regexpp: ^3.1.0
+    semver: ^7.2.1
+    strip-ansi: ^6.0.0
+    strip-json-comments: ^3.1.0
+    table: ^6.0.9
+    text-table: ^0.2.0
+    v8-compile-cache: ^2.0.3
+  bin:
+    eslint: bin/eslint.js
+  checksum: cc85af9985a3a11085c011f3d27abe8111006d34cc274291b3c4d7bea51a4e2ff6135780249becd919ba7f6d6d1ecc38a6b73dacb6a7be08d38453b344dc8d37
+  languageName: node
+  linkType: hard
+
+"espree@npm:^7.3.0, espree@npm:^7.3.1":
+  version: 7.3.1
+  resolution: "espree@npm:7.3.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fespree%2F-%2Fespree-7.3.1.tgz"
+  dependencies:
+    acorn: ^7.4.0
+    acorn-jsx: ^5.3.1
+    eslint-visitor-keys: ^1.3.0
+  checksum: aa9b50dcce883449af2e23bc2b8d9abb77118f96f4cb313935d6b220f77137eaef7724a83c3f6243b96bc0e4ab14766198e60818caad99f9519ae5a336a39b45
+  languageName: node
+  linkType: hard
+
+"esprima@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "esprima@npm:4.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fesprima%2F-%2Fesprima-4.0.1.tgz"
+  bin:
+    esparse: ./bin/esparse.js
+    esvalidate: ./bin/esvalidate.js
+  checksum: b45bc805a613dbea2835278c306b91aff6173c8d034223fa81498c77dcbce3b2931bf6006db816f62eacd9fd4ea975dfd85a5b7f3c6402cfd050d4ca3c13a628
+  languageName: node
+  linkType: hard
+
+"esquery@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "esquery@npm:1.4.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fesquery%2F-%2Fesquery-1.4.0.tgz"
+  dependencies:
+    estraverse: ^5.1.0
+  checksum: a0807e17abd7fbe5fbd4fab673038d6d8a50675cdae6b04fbaa520c34581be0c5fa24582990e8acd8854f671dd291c78bb2efb9e0ed5b62f33bac4f9cf820210
   languageName: node
   linkType: hard
 
@@ -4075,10 +4916,24 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"estraverse@npm:^5.1.0":
+  version: 5.2.0
+  resolution: "estraverse@npm:5.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Festraverse%2F-%2Festraverse-5.2.0.tgz"
+  checksum: ec11b70d946bf5d7f76f91db38ef6f08109ac1b36cda293a26e678e58df4719f57f67b9ec87042afdd1f0267cee91865be3aa48d2161765a93defab5431be7b8
+  languageName: node
+  linkType: hard
+
 "estraverse@npm:^5.2.0":
   version: 5.2.0
   resolution: "estraverse@npm:5.2.0"
   checksum: ec11b70d946bf5d7f76f91db38ef6f08109ac1b36cda293a26e678e58df4719f57f67b9ec87042afdd1f0267cee91865be3aa48d2161765a93defab5431be7b8
+  languageName: node
+  linkType: hard
+
+"esutils@npm:^2.0.2":
+  version: 2.0.3
+  resolution: "esutils@npm:2.0.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fesutils%2F-%2Fesutils-2.0.3.tgz"
+  checksum: 22b5b08f74737379a840b8ed2036a5fb35826c709ab000683b092d9054e5c2a82c27818f12604bfc2a9a76b90b6834ef081edbc1c7ae30d1627012e067c6ec87
   languageName: node
   linkType: hard
 
@@ -4152,6 +5007,13 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"fast-deep-equal@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "fast-deep-equal@npm:3.1.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ffast-deep-equal%2F-%2Ffast-deep-equal-3.1.3.tgz"
+  checksum: e21a9d8d84f53493b6aa15efc9cfd53dd5b714a1f23f67fb5dc8f574af80df889b3bce25dc081887c6d25457cce704e636395333abad896ccdec03abaf1f3f9d
+  languageName: node
+  linkType: hard
+
 "fast-glob@npm:^3.1.1":
   version: 3.2.7
   resolution: "fast-glob@npm:3.2.7"
@@ -4169,6 +5031,13 @@ apollo-server-hapi@2.25.2:
   version: 2.1.0
   resolution: "fast-json-stable-stringify@npm:2.1.0"
   checksum: b191531e36c607977e5b1c47811158733c34ccb3bfde92c44798929e9b4154884378536d26ad90dfecd32e1ffc09c545d23535ad91b3161a27ddbb8ebe0cbecb
+  languageName: node
+  linkType: hard
+
+"fast-levenshtein@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "fast-levenshtein@npm:2.0.6::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ffast-levenshtein%2F-%2Ffast-levenshtein-2.0.6.tgz"
+  checksum: 92cfec0a8dfafd9c7a15fba8f2cc29cd0b62b85f056d99ce448bbcd9f708e18ab2764bda4dd5158364f4145a7c72788538994f0d1787b956ef0d1062b0f7c24c
   languageName: node
   linkType: hard
 
@@ -4261,12 +5130,30 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"file-entry-cache@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "file-entry-cache@npm:6.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ffile-entry-cache%2F-%2Ffile-entry-cache-6.0.1.tgz"
+  dependencies:
+    flat-cache: ^3.0.4
+  checksum: f49701feaa6314c8127c3c2f6173cfefff17612f5ed2daaafc6da13b5c91fd43e3b2a58fd0d63f9f94478a501b167615931e7200e31485e320f74a33885a9c74
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^7.0.1":
   version: 7.0.1
   resolution: "fill-range@npm:7.0.1"
   dependencies:
     to-regex-range: ^5.0.1
   checksum: cc283f4e65b504259e64fd969bcf4def4eb08d85565e906b7d36516e87819db52029a76b6363d0f02d0d532f0033c9603b9e2d943d56ee3b0d4f7ad3328ff917
+  languageName: node
+  linkType: hard
+
+"find-up@npm:^2.0.0, find-up@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "find-up@npm:2.1.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ffind-up%2F-%2Ffind-up-2.1.0.tgz"
+  dependencies:
+    locate-path: ^2.0.0
+  checksum: 43284fe4da09f89011f08e3c32cd38401e786b19226ea440b75386c1b12a4cb738c94969808d53a84f564ede22f732c8409e3cfc3f7fb5b5c32378ad0bbf28bd
   languageName: node
   linkType: hard
 
@@ -4280,10 +5167,27 @@ apollo-server-hapi@2.25.2:
   languageName: node
   linkType: hard
 
+"flat-cache@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "flat-cache@npm:3.0.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fflat-cache%2F-%2Fflat-cache-3.0.4.tgz"
+  dependencies:
+    flatted: ^3.1.0
+    rimraf: ^3.0.2
+  checksum: 4fdd10ecbcbf7d520f9040dd1340eb5dfe951e6f0ecf2252edeec03ee68d989ec8b9a20f4434270e71bcfd57800dc09b3344fca3966b2eb8f613072c7d9a2365
+  languageName: node
+  linkType: hard
+
 "flatstr@npm:^1.0.12":
   version: 1.0.12
   resolution: "flatstr@npm:1.0.12"
   checksum: e1bb562c94b119e958bf37e55738b172b5f8aaae6532b9660ecd877779f8559dbbc89613ba6b29ccc13447e14c59277d41450f785cf75c30df9fce62f459e9a8
+  languageName: node
+  linkType: hard
+
+"flatted@npm:^3.1.0":
+  version: 3.2.2
+  resolution: "flatted@npm:3.2.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fflatted%2F-%2Fflatted-3.2.2.tgz"
+  checksum: 9d5e03fd9309b9103f345cf6d0cef4fa46201baa053b0ca3d57fa489449b0bee687b7355407898f630afbb1a1286d2a6658e7e77dea3b85c3cd6c6ce2894a5c3
   languageName: node
   linkType: hard
 
@@ -4363,6 +5267,13 @@ fsevents@~2.3.2:
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
   checksum: b32fbaebb3f8ec4969f033073b43f5c8befbb58f1a79e12f1d7490358150359ebd92f49e72ff0144f65f2c48ea2a605bff2d07965f548f6474fd8efd95bf361a
+  languageName: node
+  linkType: hard
+
+"functional-red-black-tree@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "functional-red-black-tree@npm:1.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ffunctional-red-black-tree%2F-%2Ffunctional-red-black-tree-1.0.1.tgz"
+  checksum: ca6c170f37640e2d94297da8bb4bf27a1d12bea3e00e6a3e007fd7aa32e37e000f5772acf941b4e4f3cf1c95c3752033d0c509af157ad8f526e7f00723b9eb9f
   languageName: node
   linkType: hard
 
@@ -4492,6 +5403,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"globals@npm:^13.6.0, globals@npm:^13.9.0":
+  version: 13.11.0
+  resolution: "globals@npm:13.11.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fglobals%2F-%2Fglobals-13.11.0.tgz"
+  dependencies:
+    type-fest: ^0.20.2
+  checksum: e9e5624154261a3e5344d2105a94886c5f2ca48028fa8258cd7b9119c5f00cf2909392817bb2d162c9a1a31b55d9b2c14e8f2271c45a22f77806f5b9322541cf
+  languageName: node
+  linkType: hard
+
 "globby@npm:^11.0.3, globby@npm:^11.0.4":
   version: 11.0.4
   resolution: "globby@npm:11.0.4"
@@ -4606,6 +5526,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"graphql-subscriptions@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "graphql-subscriptions@npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fgraphql-subscriptions%2F-%2Fgraphql-subscriptions-1.2.1.tgz"
+  dependencies:
+    iterall: ^1.3.0
+  peerDependencies:
+    graphql: ^0.10.5 || ^0.11.3 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 2b9533c6774e7be46acd6fbee528aab06429f15dc222eabd991e82c02bf74e390b638dffa1a3fd86c1e26212c40a42a0418d7f4a7c3a1edf0534978ef128e528
+  languageName: node
+  linkType: hard
+
 "graphql-tag@npm:^2.11.0, graphql-tag@npm:^2.12.0":
   version: 2.12.5
   resolution: "graphql-tag@npm:2.12.5"
@@ -4645,6 +5576,17 @@ fsevents@~2.3.2:
   version: 15.5.1
   resolution: "graphql@npm:15.5.1"
   checksum: 7e45ae27021e5bafd2a3ce557e708606ff28504aae705654764fa6239b0151d014a90cbd4c68300f4f95a9074820aaee9b1f25b560ff089c8db0b49563e34080
+  languageName: node
+  linkType: hard
+
+"hapi-alive@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "hapi-alive@npm:2.0.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fhapi-alive%2F-%2Fhapi-alive-2.0.4.tgz"
+  dependencies:
+    "@hapi/boom": ^7.4.2
+    "@hapi/hoek": ^8.0.2
+    "@hapi/joi": ^15.1.0
+  checksum: ad5101b56c13f5f5b2da59c6355cc61fccc9761a892457120b2291c38828087b4802da436945d21f5d144d1cff5cac514d80370a79a429dc9d81f6817335ff7d
   languageName: node
   linkType: hard
 
@@ -4746,6 +5688,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"hosted-git-info@npm:^2.1.4":
+  version: 2.8.9
+  resolution: "hosted-git-info@npm:2.8.9::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fhosted-git-info%2F-%2Fhosted-git-info-2.8.9.tgz"
+  checksum: c955394bdab888a1e9bb10eb33029e0f7ce5a2ac7b3f158099dc8c486c99e73809dca609f5694b223920ca2174db33d32b12f9a2a47141dc59607c29da5a62dd
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.0.0":
   version: 4.1.0
   resolution: "http-cache-semantics@npm:4.1.0"
@@ -4842,6 +5791,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"ignore@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "ignore@npm:4.0.6::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fignore%2F-%2Fignore-4.0.6.tgz"
+  checksum: 248f82e50a430906f9ee7f35e1158e3ec4c3971451dd9f99c9bc1548261b4db2b99709f60ac6c6cac9333494384176cc4cc9b07acbe42d52ac6a09cad734d800
+  languageName: node
+  linkType: hard
+
 "ignore@npm:^5.1.4":
   version: 5.1.8
   resolution: "ignore@npm:5.1.8"
@@ -4853,6 +5809,16 @@ fsevents@~2.3.2:
   version: 3.7.6
   resolution: "immutable@npm:3.7.6"
   checksum: 8cccfb22d3ecf14fe0c474612e96d6bb5d117493e7639fe6642fb81e78c9ac4b698dd8a322c105001a709ad873ffc90e30bad7db5d9a3ef0b54a6e1db0258e8e
+  languageName: node
+  linkType: hard
+
+"import-fresh@npm:^3.0.0":
+  version: 3.3.0
+  resolution: "import-fresh@npm:3.3.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fimport-fresh%2F-%2Fimport-fresh-3.3.0.tgz"
+  dependencies:
+    parent-module: ^1.0.0
+    resolve-from: ^4.0.0
+  checksum: 2cacfad06e652b1edc50be650f7ec3be08c5e5a6f6d12d035c440a42a8cc028e60a5b99ca08a77ab4d6b1346da7d971915828f33cdab730d3d42f08242d09baa
   languageName: node
   linkType: hard
 
@@ -5082,6 +6048,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"is-core-module@npm:^2.4.0":
+  version: 2.6.0
+  resolution: "is-core-module@npm:2.6.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fis-core-module%2F-%2Fis-core-module-2.6.0.tgz"
+  dependencies:
+    has: ^1.0.3
+  checksum: 183b3b96fed19822b13959876b0317e61fc2cb5ebcbc21639904c81f7ae328af57f8e18cc4750a9c4abebd686130c70d34a89521e57dbe002edfa4614507ce18
+  languageName: node
+  linkType: hard
+
 "is-date-object@npm:^1.0.1":
   version: 1.0.4
   resolution: "is-date-object@npm:1.0.4"
@@ -5122,6 +6097,15 @@ fsevents@~2.3.2:
 "is-glob@npm:4.0.1, is-glob@npm:^4.0.1, is-glob@npm:~4.0.1":
   version: 4.0.1
   resolution: "is-glob@npm:4.0.1"
+  dependencies:
+    is-extglob: ^2.1.1
+  checksum: 84627cad11b4e745f5db5a163f32c47b711585a5ff6e14f8f8d026db87f4cdd3e2c95f6fa1f94ad22e469f36d819ae2814f03f9c668b164422ac3354a94672d3
+  languageName: node
+  linkType: hard
+
+"is-glob@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "is-glob@npm:4.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fis-glob%2F-%2Fis-glob-4.0.1.tgz"
   dependencies:
     is-extglob: ^2.1.1
   checksum: 84627cad11b4e745f5db5a163f32c47b711585a5ff6e14f8f8d026db87f4cdd3e2c95f6fa1f94ad22e469f36d819ae2814f03f9c668b164422ac3354a94672d3
@@ -5415,6 +6399,18 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:^3.13.1":
+  version: 3.14.1
+  resolution: "js-yaml@npm:3.14.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fjs-yaml%2F-%2Fjs-yaml-3.14.1.tgz"
+  dependencies:
+    argparse: ^1.0.7
+    esprima: ^4.0.0
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: bef146085f472d44dee30ec34e5cf36bf89164f5d585435a3d3da89e52622dff0b188a580e4ad091c3341889e14cb88cac6e4deb16dc5b1e9623bb0601fc255c
+  languageName: node
+  linkType: hard
+
 "js-yaml@npm:^4.0.0":
   version: 4.1.0
   resolution: "js-yaml@npm:4.1.0"
@@ -5442,6 +6438,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"json-parse-better-errors@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "json-parse-better-errors@npm:1.0.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fjson-parse-better-errors%2F-%2Fjson-parse-better-errors-1.0.2.tgz"
+  checksum: ff2b5ba2a70e88fd97a3cb28c1840144c5ce8fae9cbeeddba15afa333a5c407cf0e42300cd0a2885dbb055227fe68d405070faad941beeffbfde9cf3b2c78c5d
+  languageName: node
+  linkType: hard
+
 "json-parse-better-errors@npm:^1.0.2":
   version: 1.0.2
   resolution: "json-parse-better-errors@npm:1.0.2"
@@ -5460,6 +6463,20 @@ fsevents@~2.3.2:
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
   checksum: 7486074d3ba247769fda17d5181b345c9fb7d12e0da98b22d1d71a5db9698d8b4bd900a3ec1a4ffdd60846fc2556274a5c894d0c48795f14cb03aeae7b55260b
+  languageName: node
+  linkType: hard
+
+"json-schema-traverse@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "json-schema-traverse@npm:1.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fjson-schema-traverse%2F-%2Fjson-schema-traverse-1.0.0.tgz"
+  checksum: 02f2f466cdb0362558b2f1fd5e15cce82ef55d60cd7f8fa828cf35ba74330f8d767fcae5c5c2adb7851fa811766c694b9405810879bc4e1ddd78a7c0e03658ad
+  languageName: node
+  linkType: hard
+
+"json-stable-stringify-without-jsonify@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "json-stable-stringify-without-jsonify@npm:1.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fjson-stable-stringify-without-jsonify%2F-%2Fjson-stable-stringify-without-jsonify-1.0.1.tgz"
+  checksum: cff44156ddce9c67c44386ad5cddf91925fe06b1d217f2da9c4910d01f358c6e3989c4d5a02683c7a5667f9727ff05831f7aa8ae66c8ff691c556f0884d49215
   languageName: node
   linkType: hard
 
@@ -5493,6 +6510,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"json5@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "json5@npm:2.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fjson5%2F-%2Fjson5-2.2.0.tgz"
+  dependencies:
+    minimist: ^1.2.5
+  bin:
+    json5: lib/cli.js
+  checksum: e88fc5274bb58fc99547baa777886b069d2dd96d9cfc4490b305fd16d711dabd5979e35a4f90873cefbeb552e216b041a304fe56702bedba76e19bc7845f208d
+  languageName: node
+  linkType: hard
+
 "jsonify@npm:~0.0.0":
   version: 0.0.0
   resolution: "jsonify@npm:0.0.0"
@@ -5515,6 +6543,16 @@ fsevents@~2.3.2:
     ms: ^2.1.1
     semver: ^5.6.0
   checksum: 93c9e3f23c59b758ac88ba15f4e4753b3749dfce7a6f7c40fb86663128a1e282db085eec852d4e0cbca4cefdcd3a8275ee255dbd08fcad0df26ad9f6e4cc853a
+  languageName: node
+  linkType: hard
+
+"jsx-ast-utils@npm:^2.4.1 || ^3.0.0, jsx-ast-utils@npm:^3.1.0":
+  version: 3.2.0
+  resolution: "jsx-ast-utils@npm:3.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fjsx-ast-utils%2F-%2Fjsx-ast-utils-3.2.0.tgz"
+  dependencies:
+    array-includes: ^3.1.2
+    object.assign: ^4.1.2
+  checksum: 9f695c480212868557c5e3cd01082857e101768dc75cb904335d1a805e972d6203baa58ae0b786e7afeab1e8fdb98242fccf22dbc1734595a65845172743877c
   languageName: node
   linkType: hard
 
@@ -5555,6 +6593,22 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"language-subtag-registry@npm:~0.3.2":
+  version: 0.3.21
+  resolution: "language-subtag-registry@npm:0.3.21::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flanguage-subtag-registry%2F-%2Flanguage-subtag-registry-0.3.21.tgz"
+  checksum: 5f794525a5bfcefeea155a681af1c03365b60e115b688952a53c6e0b9532b09163f57f1fcb69d6150e0e805ec0350644a4cb35da98f4902562915be9f89572a1
+  languageName: node
+  linkType: hard
+
+"language-tags@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "language-tags@npm:1.0.5::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flanguage-tags%2F-%2Flanguage-tags-1.0.5.tgz"
+  dependencies:
+    language-subtag-registry: ~0.3.2
+  checksum: c81b5d8b9f5f9cfd06ee71ada6ddfe1cf83044dd5eeefcd1e420ad491944da8957688db4a0a9bc562df4afdc2783425cbbdfd152c01d93179cf86888903123cf
+  languageName: node
+  linkType: hard
+
 "latest-version@npm:5.1.0, latest-version@npm:^5.0.0":
   version: 5.1.0
   resolution: "latest-version@npm:5.1.0"
@@ -5568,6 +6622,16 @@ fsevents@~2.3.2:
   version: 2.1.0
   resolution: "leven@npm:2.1.0"
   checksum: f7b4a01b15c0ee2f92a04c0367ea025d10992b044df6f0d4ee1a845d4a488b343e99799e2f31212d72a2b1dea67124f57c1bb1b4561540df45190e44b5b8b394
+  languageName: node
+  linkType: hard
+
+"levn@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "levn@npm:0.4.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flevn%2F-%2Flevn-0.4.1.tgz"
+  dependencies:
+    prelude-ls: ^1.2.1
+    type-check: ~0.4.0
+  checksum: 12c5021c859bd0f5248561bf139121f0358285ec545ebf48bb3d346820d5c61a4309535c7f387ed7d84361cf821e124ce346c6b7cef8ee09a67c1473b46d0fc4
   languageName: node
   linkType: hard
 
@@ -5632,10 +6696,32 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"load-json-file@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "load-json-file@npm:4.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fload-json-file%2F-%2Fload-json-file-4.0.0.tgz"
+  dependencies:
+    graceful-fs: ^4.1.2
+    parse-json: ^4.0.0
+    pify: ^3.0.0
+    strip-bom: ^3.0.0
+  checksum: 8f5d6d93ba64a9620445ee9bde4d98b1eac32cf6c8c2d20d44abfa41a6945e7969456ab5f1ca2fb06ee32e206c9769a20eec7002fe290de462e8c884b6b8b356
+  languageName: node
+  linkType: hard
+
 "loader-runner@npm:^4.2.0":
   version: 4.2.0
   resolution: "loader-runner@npm:4.2.0"
   checksum: e61aea8b6904b8af53d9de6f0484da86c462c0001f4511bedc837cec63deb9475cea813db62f702cd7930420ccb0e75c78112270ca5c8b61b374294f53c0cb3a
+  languageName: node
+  linkType: hard
+
+"locate-path@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "locate-path@npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flocate-path%2F-%2Flocate-path-2.0.0.tgz"
+  dependencies:
+    p-locate: ^2.0.0
+    path-exists: ^3.0.0
+  checksum: 02d581edbbbb0fa292e28d96b7de36b5b62c2fa8b5a7e82638ebb33afa74284acf022d3b1e9ae10e3ffb7658fbc49163fcd5e76e7d1baaa7801c3e05a81da755
   languageName: node
   linkType: hard
 
@@ -5645,6 +6731,13 @@ fsevents@~2.3.2:
   dependencies:
     p-locate: ^4.1.0
   checksum: 83e51725e67517287d73e1ded92b28602e3ae5580b301fe54bfb76c0c723e3f285b19252e375712316774cf52006cb236aed5704692c32db0d5d089b69696e30
+  languageName: node
+  linkType: hard
+
+"lodash.clonedeep@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.clonedeep@npm:4.5.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flodash.clonedeep%2F-%2Flodash.clonedeep-4.5.0.tgz"
+  checksum: 92c46f094b064e876a23c97f57f81fbffd5d760bf2d8a1c61d85db6d1e488c66b0384c943abee4f6af7debf5ad4e4282e74ff83177c9e63d8ff081a4837c3489
   languageName: node
   linkType: hard
 
@@ -5697,6 +6790,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"lodash.merge@npm:^4.6.2":
+  version: 4.6.2
+  resolution: "lodash.merge@npm:4.6.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flodash.merge%2F-%2Flodash.merge-4.6.2.tgz"
+  checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
+  languageName: node
+  linkType: hard
+
 "lodash.once@npm:^4.0.0":
   version: 4.1.1
   resolution: "lodash.once@npm:4.1.1"
@@ -5708,6 +6808,13 @@ fsevents@~2.3.2:
   version: 4.7.0
   resolution: "lodash.sortby@npm:4.7.0"
   checksum: db170c9396d29d11fe9a9f25668c4993e0c1331bcb941ddbd48fb76f492e732add7f2a47cfdf8e9d740fa59ac41bbfaf931d268bc72aab3ab49e9f89354d718c
+  languageName: node
+  linkType: hard
+
+"lodash.truncate@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "lodash.truncate@npm:4.4.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Flodash.truncate%2F-%2Flodash.truncate-4.4.2.tgz"
+  checksum: b463d8a382cfb5f0e71c504dcb6f807a7bd379ff1ea216669aa42c52fc28c54e404bfbd96791aa09e6df0de2c1d7b8f1b7f4b1a61f324d38fe98bc535aeee4f5
   languageName: node
   linkType: hard
 
@@ -6079,6 +7186,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"natural-compare@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "natural-compare@npm:1.4.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fnatural-compare%2F-%2Fnatural-compare-1.4.0.tgz"
+  checksum: 23ad088b08f898fc9b53011d7bb78ec48e79de7627e01ab5518e806033861bef68d5b0cd0e2205c2f36690ac9571ff6bcb05eb777ced2eeda8d4ac5b44592c3d
+  languageName: node
+  linkType: hard
+
 "neo-async@npm:^2.6.2":
   version: 2.6.2
   resolution: "neo-async@npm:2.6.2"
@@ -6176,6 +7290,18 @@ fsevents@~2.3.2:
   bin:
     nopt: ./bin/nopt.js
   checksum: f62575aceaa3be43f365bf37a596b89bbac2e796b001b6d2e2a85c2140a4e378ff919e2753ccba959c4fd344776fc88c29b393bc167fa939fb1513f126f4cd45
+  languageName: node
+  linkType: hard
+
+"normalize-package-data@npm:^2.3.2":
+  version: 2.5.0
+  resolution: "normalize-package-data@npm:2.5.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fnormalize-package-data%2F-%2Fnormalize-package-data-2.5.0.tgz"
+  dependencies:
+    hosted-git-info: ^2.1.4
+    resolve: ^1.10.0
+    semver: 2 || 3 || 4 || 5
+    validate-npm-package-license: ^3.0.1
+  checksum: 7999112efc35a6259bc22db460540cae06564aa65d0271e3bdfa86876d08b0e578b7b5b0028ee61b23f1cae9fc0e7847e4edc0948d3068a39a2a82853efc8499
   languageName: node
   linkType: hard
 
@@ -6284,6 +7410,29 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"object.entries@npm:^1.1.2, object.entries@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "object.entries@npm:1.1.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fobject.entries%2F-%2Fobject.entries-1.1.4.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.2
+  checksum: 1ddd2e28f5ecfe2369fe198439ec0457529f3eec85c7f43870be8de3ec3d98024b014ddb4a769ca48925e47ed76c69a51d8bf2c9886ed43174e3a1d33c2dbe38
+  languageName: node
+  linkType: hard
+
+"object.fromentries@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "object.fromentries@npm:2.0.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fobject.fromentries%2F-%2Fobject.fromentries-2.0.4.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.0-next.2
+    has: ^1.0.3
+  checksum: 1e8e991c43a463a6389c6ee6935ef3843931fb012c5eed2ec30e3d5cf3760cb853f527723cdc98fb770d9c0cd068449448b03c303f527e7926a97d43daaa5c66
+  languageName: node
+  linkType: hard
+
 "object.getownpropertydescriptors@npm:^2.1.1":
   version: 2.1.2
   resolution: "object.getownpropertydescriptors@npm:2.1.2"
@@ -6292,6 +7441,17 @@ fsevents@~2.3.2:
     define-properties: ^1.1.3
     es-abstract: ^1.18.0-next.2
   checksum: 6c1c0162a2bea912f092dbf48699998d6f4b788a9884ee99ba41ddf25c3f0924ec56c6a55738c4ae3bd91d1203813a9a8e18e6fff1f477e2626cdbcd1a5f3ca8
+  languageName: node
+  linkType: hard
+
+"object.values@npm:^1.1.3, object.values@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "object.values@npm:1.1.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fobject.values%2F-%2Fobject.values-1.1.4.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.2
+  checksum: 1a2f1e9d0bcfc299b8491170a50e6e7ca23392641d7781a8528e96c72f0013ba7ee731792ff8586c8eaec0328acda16c59622924c82c58bd0eb5c4ee67794856
   languageName: node
   linkType: hard
 
@@ -6332,6 +7492,20 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"optionator@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "optionator@npm:0.9.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Foptionator%2F-%2Foptionator-0.9.1.tgz"
+  dependencies:
+    deep-is: ^0.1.3
+    fast-levenshtein: ^2.0.6
+    levn: ^0.4.1
+    prelude-ls: ^1.2.1
+    type-check: ^0.4.0
+    word-wrap: ^1.2.3
+  checksum: dbc6fa065604b24ea57d734261914e697bd73b69eff7f18e967e8912aa2a40a19a9f599a507fa805be6c13c24c4eae8c71306c239d517d42d4c041c942f508a0
+  languageName: node
+  linkType: hard
+
 "os-tmpdir@npm:~1.0.2":
   version: 1.0.2
   resolution: "os-tmpdir@npm:1.0.2"
@@ -6355,12 +7529,30 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"p-limit@npm:^1.1.0":
+  version: 1.3.0
+  resolution: "p-limit@npm:1.3.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fp-limit%2F-%2Fp-limit-1.3.0.tgz"
+  dependencies:
+    p-try: ^1.0.0
+  checksum: 281c1c0b8c82e1ac9f81acd72a2e35d402bf572e09721ce5520164e9de07d8274451378a3470707179ad13240535558f4b277f02405ad752e08c7d5b0d54fbfd
+  languageName: node
+  linkType: hard
+
 "p-limit@npm:^2.2.0":
   version: 2.3.0
   resolution: "p-limit@npm:2.3.0"
   dependencies:
     p-try: ^2.0.0
   checksum: 84ff17f1a38126c3314e91ecfe56aecbf36430940e2873dadaa773ffe072dc23b7af8e46d4b6485d302a11673fe94c6b67ca2cfbb60c989848b02100d0594ac1
+  languageName: node
+  linkType: hard
+
+"p-locate@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "p-locate@npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fp-locate%2F-%2Fp-locate-2.0.0.tgz"
+  dependencies:
+    p-limit: ^1.1.0
+  checksum: e2dceb9b49b96d5513d90f715780f6f4972f46987dc32a0e18bc6c3fc74a1a5d73ec5f81b1398af5e58b99ea1ad03fd41e9181c01fa81b4af2833958696e3081
   languageName: node
   linkType: hard
 
@@ -6386,6 +7578,13 @@ fsevents@~2.3.2:
   dependencies:
     aggregate-error: ^3.0.0
   checksum: cb0ab21ec0f32ddffd31dfc250e3afa61e103ef43d957cc45497afe37513634589316de4eb88abdfd969fe6410c22c0b93ab24328833b8eb1ccc087fc0442a1c
+  languageName: node
+  linkType: hard
+
+"p-try@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "p-try@npm:1.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fp-try%2F-%2Fp-try-1.0.0.tgz"
+  checksum: 3b5303f77eb7722144154288bfd96f799f8ff3e2b2b39330efe38db5dd359e4fb27012464cd85cb0a76e9b7edd1b443568cb3192c22e7cffc34989df0bafd605
   languageName: node
   linkType: hard
 
@@ -6438,6 +7637,16 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"parse-json@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "parse-json@npm:4.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fparse-json%2F-%2Fparse-json-4.0.0.tgz"
+  dependencies:
+    error-ex: ^1.3.1
+    json-parse-better-errors: ^1.0.1
+  checksum: 0fe227d410a61090c247e34fa210552b834613c006c2c64d9a05cfe9e89cf8b4246d1246b1a99524b53b313e9ac024438d0680f67e33eaed7e6f38db64cfe7b5
+  languageName: node
+  linkType: hard
+
 "parse-json@npm:^5.0.0":
   version: 5.2.0
   resolution: "parse-json@npm:5.2.0"
@@ -6467,6 +7676,13 @@ fsevents@~2.3.2:
     dot-case: ^3.0.4
     tslib: ^2.0.3
   checksum: 61de0526222629f65038a66f63330dd22d5b54014ded6636283e1d15364da38b3cf29e4433aa3f9d8b0dba407ae2b059c23b0104a34ee789944b1bc1c5c7e06d
+  languageName: node
+  linkType: hard
+
+"path-exists@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "path-exists@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fpath-exists%2F-%2Fpath-exists-3.0.0.tgz"
+  checksum: 96e92643aa34b4b28d0de1cd2eba52a1c5313a90c6542d03f62750d82480e20bfa62bc865d5cfc6165f5fcd5aeb0851043c40a39be5989646f223300021bae0a
   languageName: node
   linkType: hard
 
@@ -6514,6 +7730,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"path-type@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "path-type@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fpath-type%2F-%2Fpath-type-3.0.0.tgz"
+  dependencies:
+    pify: ^3.0.0
+  checksum: 735b35e256bad181f38fa021033b1c33cfbe62ead42bb2222b56c210e42938eecb272ae1949f3b6db4ac39597a61b44edd8384623ec4d79bfdc9a9c0f12537a6
+  languageName: node
+  linkType: hard
+
 "path-type@npm:^4.0.0":
   version: 4.0.0
   resolution: "path-type@npm:4.0.0"
@@ -6525,6 +7750,13 @@ fsevents@~2.3.2:
   version: 2.3.0
   resolution: "picomatch@npm:2.3.0"
   checksum: 16818720ea7c5872b6af110760dee856c8e4cd79aed1c7a006d076b1cc09eff3ae41ca5019966694c33fbd2e1cc6ea617ab10e4adac6df06556168f13be3fca2
+  languageName: node
+  linkType: hard
+
+"pify@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "pify@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fpify%2F-%2Fpify-3.0.0.tgz"
+  checksum: 6cdcbc3567d5c412450c53261a3f10991665d660961e06605decf4544a61a97a54fefe70a68d5c37080ff9d6f4cf51444c90198d1ba9f9309a6c0d6e9f5c4fde
   languageName: node
   linkType: hard
 
@@ -6573,12 +7805,37 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"pkg-dir@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "pkg-dir@npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fpkg-dir%2F-%2Fpkg-dir-2.0.0.tgz"
+  dependencies:
+    find-up: ^2.1.0
+  checksum: 8c72b712305b51e1108f0ffda5ec1525a8307e54a5855db8fb1dcf77561a5ae98e2ba3b4814c9806a679f76b2f7e5dd98bde18d07e594ddd9fdd25e9cf242ea1
+  languageName: node
+  linkType: hard
+
 "pkg-dir@npm:^4.2.0":
   version: 4.2.0
   resolution: "pkg-dir@npm:4.2.0"
   dependencies:
     find-up: ^4.0.0
   checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
+  languageName: node
+  linkType: hard
+
+"pkg-up@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "pkg-up@npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fpkg-up%2F-%2Fpkg-up-2.0.0.tgz"
+  dependencies:
+    find-up: ^2.1.0
+  checksum: de4b418175281a082e366ce1a919f032520ee53cf421578b35173f03816f6ec4c19e1552066840bb0988c3e1215859653948efd6ca3507a23f4f44229269500d
+  languageName: node
+  linkType: hard
+
+"prelude-ls@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "prelude-ls@npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fprelude-ls%2F-%2Fprelude-ls-1.2.1.tgz"
+  checksum: cd192ec0d0a8e4c6da3bb80e4f62afe336df3f76271ac6deb0e6a36187133b6073a19e9727a1ff108cd8b9982e4768850d413baa71214dd80c7979617dca827a
   languageName: node
   linkType: hard
 
@@ -6593,6 +7850,13 @@ fsevents@~2.3.2:
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fprocess-nextick-args%2F-%2Fprocess-nextick-args-2.0.1.tgz"
   checksum: 1d38588e520dab7cea67cbbe2efdd86a10cc7a074c09657635e34f035277b59fbb57d09d8638346bf7090f8e8ebc070c96fa5fd183b777fff4f5edff5e9466cf
+  languageName: node
+  linkType: hard
+
+"progress@npm:^2.0.0":
+  version: 2.0.3
+  resolution: "progress@npm:2.0.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fprogress%2F-%2Fprogress-2.0.3.tgz"
+  checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
   languageName: node
   linkType: hard
 
@@ -6733,6 +7997,27 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"read-pkg-up@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "read-pkg-up@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fread-pkg-up%2F-%2Fread-pkg-up-3.0.0.tgz"
+  dependencies:
+    find-up: ^2.0.0
+    read-pkg: ^3.0.0
+  checksum: 16175573f2914ab9788897bcbe2a62b5728d0075e62285b3680cebe97059e2911e0134a062cf6e51ebe3e3775312bc788ac2039ed6af38ec68d2c10c6f2b30fb
+  languageName: node
+  linkType: hard
+
+"read-pkg@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "read-pkg@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fread-pkg%2F-%2Fread-pkg-3.0.0.tgz"
+  dependencies:
+    load-json-file: ^4.0.0
+    normalize-package-data: ^2.3.2
+    path-type: ^3.0.0
+  checksum: 398903ebae6c7e9965419a1062924436cc0b6f516c42c4679a90290d2f87448ed8f977e7aa2dbba4aa1ac09248628c43e493ac25b2bc76640e946035200e34c6
+  languageName: node
+  linkType: hard
+
 "readable-stream@npm:^2.0.6":
   version: 2.3.7
   resolution: "readable-stream@npm:2.3.7::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Freadable-stream%2F-%2Freadable-stream-2.3.7.tgz"
@@ -6781,6 +8066,23 @@ fsevents@~2.3.2:
   version: 0.13.9
   resolution: "regenerator-runtime@npm:0.13.9"
   checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
+  languageName: node
+  linkType: hard
+
+"regexp.prototype.flags@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "regexp.prototype.flags@npm:1.3.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fregexp.prototype.flags%2F-%2Fregexp.prototype.flags-1.3.1.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+  checksum: 343595db5a6bbbb3bfbda881f9c74832cfa9fc0039e64a43843f6bb9158b78b921055266510800ed69d4997638890b17a46d55fd9f32961f53ae56ac3ec4dd05
+  languageName: node
+  linkType: hard
+
+"regexpp@npm:^3.1.0":
+  version: 3.2.0
+  resolution: "regexpp@npm:3.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fregexpp%2F-%2Fregexpp-3.2.0.tgz"
+  checksum: a78dc5c7158ad9ddcfe01aa9144f46e192ddbfa7b263895a70a5c6c73edd9ce85faf7c0430e59ac38839e1734e275b9c3de5c57ee3ab6edc0e0b1bdebefccef8
   languageName: node
   linkType: hard
 
@@ -6877,6 +8179,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"require-from-string@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "require-from-string@npm:2.0.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Frequire-from-string%2F-%2Frequire-from-string-2.0.2.tgz"
+  checksum: a03ef6895445f33a4015300c426699bc66b2b044ba7b670aa238610381b56d3f07c686251740d575e22f4c87531ba662d06937508f0f3c0f1ddc04db3130560b
+  languageName: node
+  linkType: hard
+
 "require-main-filename@npm:^2.0.0":
   version: 2.0.0
   resolution: "require-main-filename@npm:2.0.0"
@@ -6917,6 +8226,16 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"resolve@^1.10.0, resolve@^1.20.0":
+  version: 1.20.0
+  resolution: "resolve@npm:1.20.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fresolve%2F-%2Fresolve-1.20.0.tgz"
+  dependencies:
+    is-core-module: ^2.2.0
+    path-parse: ^1.0.6
+  checksum: 40cf70b2cde00ef57f99daf2dc63c6a56d6c14a1b7fc51735d06a6f0a3b97cb67b4fb7ef6c747b4e13a7baba83b0ef625d7c4ce92a483cd5af923c3b65fd16fe
+  languageName: node
+  linkType: hard
+
 resolve@^1.9.0:
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
@@ -6927,6 +8246,26 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+resolve@^2.0.0-next.3:
+  version: 2.0.0-next.3
+  resolution: "resolve@npm:2.0.0-next.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fresolve%2F-%2Fresolve-2.0.0-next.3.tgz"
+  dependencies:
+    is-core-module: ^2.2.0
+    path-parse: ^1.0.6
+  checksum: f34b3b93ada77d64a6d590c06a83e198f3a827624c4ec972260905fa6c4d612164fbf0200d16d2beefea4ad1755b001f4a9a1293d8fc2322a8f7d6bf692c4ff5
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
+  version: 1.20.0
+  resolution: "resolve@patch:resolve@npm%3A1.20.0%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.cd-tech26.de%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm%252Fresolve%252F-%252Fresolve-1.20.0.tgz#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"
+  dependencies:
+    is-core-module: ^2.2.0
+    path-parse: ^1.0.6
+  checksum: bed00be983cd20a8af0e7840664f655c4b269786dbd9595c5f156cd9d8a0050e65cdbbbdafc30ee9b6245b230c78a2c8ab6447a52545b582f476c29adb188cc5
+  languageName: node
+  linkType: hard
+
 "resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"
@@ -6934,6 +8273,16 @@ resolve@^1.9.0:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
   checksum: bed00be983cd20a8af0e7840664f655c4b269786dbd9595c5f156cd9d8a0050e65cdbbbdafc30ee9b6245b230c78a2c8ab6447a52545b582f476c29adb188cc5
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
+  version: 2.0.0-next.3
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.cd-tech26.de%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm%252Fresolve%252F-%252Fresolve-2.0.0-next.3.tgz#~builtin<compat/resolve>::version=2.0.0-next.3&hash=00b1ff"
+  dependencies:
+    is-core-module: ^2.2.0
+    path-parse: ^1.0.6
+  checksum: eb88c5e53843bc022215744307a5f5664446c0fdb8f43c33456dce98d5ee6b3162d0cd0a177bb6f1c3d5c8bf01391ac7ab2de0e936e35318725fb40ba7efdaf6
   languageName: node
   linkType: hard
 
@@ -7102,6 +8451,15 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"semver@npm:2 || 3 || 4 || 5":
+  version: 5.7.1
+  resolution: "semver@npm:5.7.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fsemver%2F-%2Fsemver-5.7.1.tgz"
+  bin:
+    semver: ./bin/semver
+  checksum: 57fd0acfd0bac382ee87cd52cd0aaa5af086a7dc8d60379dfe65fea491fb2489b6016400813930ecd61fd0952dae75c115287a1b16c234b1550887117744dfaf
+  languageName: node
+  linkType: hard
+
 "semver@npm:^5.6.0, semver@npm:^5.7.1":
   version: 5.7.1
   resolution: "semver@npm:5.7.1"
@@ -7120,9 +8478,9 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.4":
+"semver@npm:^7.2.1, semver@npm:^7.3.5":
   version: 7.3.5
-  resolution: "semver@npm:7.3.5"
+  resolution: "semver@npm:7.3.5::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fsemver%2F-%2Fsemver-7.3.5.tgz"
   dependencies:
     lru-cache: ^6.0.0
   bin:
@@ -7131,9 +8489,9 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5":
+"semver@npm:^7.3.4":
   version: 7.3.5
-  resolution: "semver@npm:7.3.5::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fsemver%2F-%2Fsemver-7.3.5.tgz"
+  resolution: "semver@npm:7.3.5"
   dependencies:
     lru-cache: ^6.0.0
   bin:
@@ -7273,6 +8631,17 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"slice-ansi@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "slice-ansi@npm:4.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fslice-ansi%2F-%2Fslice-ansi-4.0.0.tgz"
+  dependencies:
+    ansi-styles: ^4.0.0
+    astral-regex: ^2.0.0
+    is-fullwidth-code-point: ^3.0.0
+  checksum: 4a82d7f085b0e1b070e004941ada3c40d3818563ac44766cca4ceadd2080427d337554f9f99a13aaeb3b4a94d9964d9466c807b3d7b7541d1ec37ee32d308756
+  languageName: node
+  linkType: hard
+
 "smart-buffer@npm:^4.1.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fsmart-buffer%2F-%2Fsmart-buffer-4.2.0.tgz"
@@ -7359,6 +8728,40 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"spdx-correct@npm:^3.0.0":
+  version: 3.1.1
+  resolution: "spdx-correct@npm:3.1.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fspdx-correct%2F-%2Fspdx-correct-3.1.1.tgz"
+  dependencies:
+    spdx-expression-parse: ^3.0.0
+    spdx-license-ids: ^3.0.0
+  checksum: 77ce438344a34f9930feffa61be0eddcda5b55fc592906ef75621d4b52c07400a97084d8701557b13f7d2aae0cb64f808431f469e566ef3fe0a3a131dcb775a6
+  languageName: node
+  linkType: hard
+
+"spdx-exceptions@npm:^2.1.0":
+  version: 2.3.0
+  resolution: "spdx-exceptions@npm:2.3.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fspdx-exceptions%2F-%2Fspdx-exceptions-2.3.0.tgz"
+  checksum: cb69a26fa3b46305637123cd37c85f75610e8c477b6476fa7354eb67c08128d159f1d36715f19be6f9daf4b680337deb8c65acdcae7f2608ba51931540687ac0
+  languageName: node
+  linkType: hard
+
+"spdx-expression-parse@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "spdx-expression-parse@npm:3.0.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fspdx-expression-parse%2F-%2Fspdx-expression-parse-3.0.1.tgz"
+  dependencies:
+    spdx-exceptions: ^2.1.0
+    spdx-license-ids: ^3.0.0
+  checksum: a1c6e104a2cbada7a593eaa9f430bd5e148ef5290d4c0409899855ce8b1c39652bcc88a725259491a82601159d6dc790bedefc9016c7472f7de8de7361f8ccde
+  languageName: node
+  linkType: hard
+
+"spdx-license-ids@npm:^3.0.0":
+  version: 3.0.10
+  resolution: "spdx-license-ids@npm:3.0.10::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fspdx-license-ids%2F-%2Fspdx-license-ids-3.0.10.tgz"
+  checksum: 94fde6f558941f82c737433000e20678eccad448fe5e87cbb98ba1d811a120ddf7fbc4a7a3ebfcd2f49c8c4541ba6537af07750ca5cb54900a064d53f68b888d
+  languageName: node
+  linkType: hard
+
 "split2@npm:^3.1.1":
   version: 3.2.2
   resolution: "split2@npm:3.2.2"
@@ -7374,6 +8777,13 @@ resolve@^1.9.0:
   dependencies:
     tslib: ^2.0.3
   checksum: 64f53d930f63c5a9e59d4cae487c1ffa87d25eab682833b01d572cc885e7e3fdbad4f03409a41f03ecb27f1f8959432253eb48332c7007c3388efddb24ba2792
+  languageName: node
+  linkType: hard
+
+"sprintf-js@npm:~1.0.2":
+  version: 1.0.3
+  resolution: "sprintf-js@npm:1.0.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fsprintf-js%2F-%2Fsprintf-js-1.0.3.tgz"
+  checksum: 19d79aec211f09b99ec3099b5b2ae2f6e9cdefe50bc91ac4c69144b6d3928a640bb6ae5b3def70c2e85a2c3d9f5ec2719921e3a59d3ca3ef4b2fd1a4656a0df3
   languageName: node
   linkType: hard
 
@@ -7460,6 +8870,22 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"string.prototype.matchall@npm:^4.0.5":
+  version: 4.0.5
+  resolution: "string.prototype.matchall@npm:4.0.5::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fstring.prototype.matchall%2F-%2Fstring.prototype.matchall-4.0.5.tgz"
+  dependencies:
+    call-bind: ^1.0.2
+    define-properties: ^1.1.3
+    es-abstract: ^1.18.2
+    get-intrinsic: ^1.1.1
+    has-symbols: ^1.0.2
+    internal-slot: ^1.0.3
+    regexp.prototype.flags: ^1.3.1
+    side-channel: ^1.0.4
+  checksum: 0a9d64661ecf089e7712aed18a4b0d7e4093ae1dfc6d8134747a98271564065a2a667a3408fced4a77137528b3b2c0efe9d37868acae000ee13d0857a3d0f430
+  languageName: node
+  linkType: hard
+
 "string.prototype.trimend@npm:^1.0.4":
   version: 1.0.4
   resolution: "string.prototype.trimend@npm:1.0.4"
@@ -7534,10 +8960,24 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"strip-bom@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "strip-bom@npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fstrip-bom%2F-%2Fstrip-bom-3.0.0.tgz"
+  checksum: 8d50ff27b7ebe5ecc78f1fe1e00fcdff7af014e73cf724b46fb81ef889eeb1015fc5184b64e81a2efe002180f3ba431bdd77e300da5c6685d702780fbf0c8d5b
+  languageName: node
+  linkType: hard
+
 "strip-final-newline@npm:^2.0.0":
   version: 2.0.0
   resolution: "strip-final-newline@npm:2.0.0"
   checksum: 69412b5e25731e1938184b5d489c32e340605bb611d6140344abc3421b7f3c6f9984b21dff296dfcf056681b82caa3bb4cc996a965ce37bcfad663e92eae9c64
+  languageName: node
+  linkType: hard
+
+"strip-json-comments@npm:^3.1.0":
+  version: 3.1.1
+  resolution: "strip-json-comments@npm:3.1.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fstrip-json-comments%2F-%2Fstrip-json-comments-3.1.1.tgz"
+  checksum: 492f73e27268f9b1c122733f28ecb0e7e8d8a531a6662efbd08e22cccb3f9475e90a1b82cab06a392f6afae6d2de636f977e231296400d0ec5304ba70f166443
   languageName: node
   linkType: hard
 
@@ -7652,6 +9092,20 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"table@npm:^6.0.9":
+  version: 6.7.1
+  resolution: "table@npm:6.7.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftable%2F-%2Ftable-6.7.1.tgz"
+  dependencies:
+    ajv: ^8.0.1
+    lodash.clonedeep: ^4.5.0
+    lodash.truncate: ^4.4.2
+    slice-ansi: ^4.0.0
+    string-width: ^4.2.0
+    strip-ansi: ^6.0.0
+  checksum: 053b61fa4e8f8396c65ff7a95da90e85620370932652d501ff7a0a3ed7317f1cc549702bd2abf2bd9ed01e20757b73a8b57374f8a8a2ac02fbe0550276263fb6
+  languageName: node
+  linkType: hard
+
 "tapable@npm:^2.1.1, tapable@npm:^2.2.0":
   version: 2.2.0
   resolution: "tapable@npm:2.2.0"
@@ -7706,6 +9160,13 @@ resolve@^1.9.0:
   bin:
     terser: bin/terser
   checksum: 9354af5c22ade95004c103893606968cbd5390824c9d89df540f9e578c6e6559a5e9c56a1bf23ed055cdb61c60defdbc2c29e773514f9f2fbc7fd7ed335f1f58
+  languageName: node
+  linkType: hard
+
+"text-table@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "text-table@npm:0.2.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftext-table%2F-%2Ftext-table-0.2.0.tgz"
+  checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
   languageName: node
   linkType: hard
 
@@ -7836,9 +9297,27 @@ resolve@^1.9.0:
   languageName: node
   linkType: hard
 
+"tsconfig-paths@npm:^3.9.0":
+  version: 3.10.1
+  resolution: "tsconfig-paths@npm:3.10.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftsconfig-paths%2F-%2Ftsconfig-paths-3.10.1.tgz"
+  dependencies:
+    json5: ^2.2.0
+    minimist: ^1.2.0
+    strip-bom: ^3.0.0
+  checksum: 014ec869276114031d3bd6d2d9ce07c32c96ca6912f32285f46eeb4ca5270bd4c5e4de1353b838c66282157f089dedc8c3377c4e72e2f3d910e706c7b9ac5e6d
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.10.0, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
+  checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^1.8.1":
+  version: 1.14.1
+  resolution: "tslib@npm:1.14.1::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftslib%2F-%2Ftslib-1.14.1.tgz"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
   languageName: node
   linkType: hard
@@ -7861,6 +9340,33 @@ resolve@^1.9.0:
   version: 2.2.0
   resolution: "tslib@npm:2.2.0"
   checksum: a48c9639f7496fa701ea8ffe0561070fcb44c104a59632f7f845c0af00825c99b6373575ec59b2b5cdbfd7505875086dbe5dc83312304d8979f22ce571218ca3
+  languageName: node
+  linkType: hard
+
+"tsutils@npm:^3.21.0":
+  version: 3.21.0
+  resolution: "tsutils@npm:3.21.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftsutils%2F-%2Ftsutils-3.21.0.tgz"
+  dependencies:
+    tslib: ^1.8.1
+  peerDependencies:
+    typescript: ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta"
+  checksum: 1843f4c1b2e0f975e08c4c21caa4af4f7f65a12ac1b81b3b8489366826259323feb3fc7a243123453d2d1a02314205a7634e048d4a8009921da19f99755cdc48
+  languageName: node
+  linkType: hard
+
+"type-check@npm:^0.4.0, type-check@npm:~0.4.0":
+  version: 0.4.0
+  resolution: "type-check@npm:0.4.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftype-check%2F-%2Ftype-check-0.4.0.tgz"
+  dependencies:
+    prelude-ls: ^1.2.1
+  checksum: ec688ebfc9c45d0c30412e41ca9c0cdbd704580eb3a9ccf07b9b576094d7b86a012baebc95681999dd38f4f444afd28504cb3a89f2ef16b31d4ab61a0739025a
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^0.20.2":
+  version: 0.20.2
+  resolution: "type-fest@npm:0.20.2::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Ftype-fest%2F-%2Ftype-fest-0.20.2.tgz"
+  checksum: 4fb3272df21ad1c552486f8a2f8e115c09a521ad7a8db3d56d53718d0c907b62c6e9141ba5f584af3f6830d0872c521357e512381f24f7c44acae583ad517d73
   languageName: node
   linkType: hard
 
@@ -8080,6 +9586,13 @@ typescript@^4.3.5:
   languageName: node
   linkType: hard
 
+"v8-compile-cache@npm:^2.0.3":
+  version: 2.3.0
+  resolution: "v8-compile-cache@npm:2.3.0::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fv8-compile-cache%2F-%2Fv8-compile-cache-2.3.0.tgz"
+  checksum: adb0a271eaa2297f2f4c536acbfee872d0dd26ec2d76f66921aa7fc437319132773483344207bdbeee169225f4739016d8d2dbf0553913a52bb34da6d0334f8e
+  languageName: node
+  linkType: hard
+
 "v8-compile-cache@npm:^2.2.0":
   version: 2.3.0
   resolution: "v8-compile-cache@npm:2.3.0"
@@ -8091,6 +9604,16 @@ typescript@^4.3.5:
   version: 1.0.9
   resolution: "valid-url@npm:1.0.9"
   checksum: 3ecb030559404441c2cf104cbabab8770efb0f36d117db03d1081052ef133015a68806148ce954bb4dd0b5c42c14b709a88783c93d66b0916cb67ba771c98702
+  languageName: node
+  linkType: hard
+
+"validate-npm-package-license@npm:^3.0.1":
+  version: 3.0.4
+  resolution: "validate-npm-package-license@npm:3.0.4::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fvalidate-npm-package-license%2F-%2Fvalidate-npm-package-license-3.0.4.tgz"
+  dependencies:
+    spdx-correct: ^3.0.0
+    spdx-expression-parse: ^3.0.0
+  checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
   languageName: node
   linkType: hard
 
@@ -8272,6 +9795,13 @@ typescript@^4.3.5:
   version: 2.0.0
   resolution: "wildcard@npm:2.0.0"
   checksum: 1f4fe4c03dfc492777c60f795bbba597ac78794f1b650d68f398fbee9adb765367c516ebd4220889b6a81e9626e7228bbe0d66237abb311573c2ee1f4902a5ad
+  languageName: node
+  linkType: hard
+
+"word-wrap@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "word-wrap@npm:1.2.3::__archiveUrl=https%3A%2F%2Fartifactory.cd-tech26.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm%2Fword-wrap%2F-%2Fword-wrap-1.2.3.tgz"
+  checksum: 30b48f91fcf12106ed3186ae4fa86a6a1842416df425be7b60485de14bec665a54a68e4b5156647dec3a70f25e84d270ca8bc8cd23182ed095f5c7206a938c1f
   languageName: node
   linkType: hard
 

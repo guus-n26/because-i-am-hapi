@@ -1,5 +1,5 @@
-import React from "react";
-import { NormalizedCacheObject } from "@apollo/client";
+import React from 'react';
+import { NormalizedCacheObject } from '@apollo/client';
 
 export default function Html({
   content,
@@ -16,11 +16,11 @@ export default function Html({
           dangerouslySetInnerHTML={{
             __html: `window.__APOLLO_STATE__=${JSON.stringify(state).replace(
               /</g,
-              "\\u003c"
+              '\\u003c',
             )};`,
           }}
         />
-        <script type="module" src="/public/bundle.js"></script>
+        <script type="module" src="/public/bundle.js" />
       </body>
     </html>
   );

@@ -1,8 +1,21 @@
+enum LIVING {
+  House
+  Garden
+  TREEHOUSE
+}
+
 type Query {
   name: String
   address: Address
 }
 
+type Subscription {
+  numberIncremented: Int
+}
+
 type Address {
   street: String
+  number: Int
+  city: String
+  type: LIVING
 }

@@ -1,6 +1,6 @@
-import App from "../../../components/app";
-import React from "react";
-import { ApolloClient, ApolloProvider } from "@apollo/client";
+import React from 'react';
+import { ApolloClient, ApolloProvider } from '@apollo/client';
+import App from '../../../components/app';
 
 function SsrEntry({ client }: { client: ApolloClient<any> }) {
   return (

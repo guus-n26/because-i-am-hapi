@@ -1,18 +1,38 @@
-import { makeExecutableSchema } from "apollo-server-hapi";
+import { makeExecutableSchema, PubSub } from 'apollo-server-hapi';
+import { Resolvers } from './resolvers';
 
-const schema = makeExecutableSchema({
-  typeDefs: require("./schema.graphql"),
-  resolvers: {
-    Query: {
-      name: (source, variables, context, document) => {
-        console.log(context);
-        return "Guus";
-      },
-      address: () => ({
-        street: "test street",
-      }),
+import typeDefs from './schema.graphql';
+
+const pubsub = new PubSub();
+
+let currentNumber = 0;
+
+function incrementNumber() {
+  console.log('incrementNumber');
+  currentNumber += 1;
+  pubsub.publish('NUMBER_INCREMENTED', { numberIncremented: currentNumber });
+  setTimeout(incrementNumber, 1000);
+}
+
+const resolvers: Resolvers = {
+  Query: {
+    name: () => 'Guus',
+    address: () => ({
+      street: 'Test street',
+    }),
+  },
+  Subscription: {
+    numberIncremented: {
+      subscribe: () => pubsub.asyncIterator(['NUMBER_INCREMENTED']),
     },
   },
+};
+
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
 });
+
+incrementNumber();
 
 export default schema;

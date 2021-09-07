@@ -1,12 +1,14 @@
-import Joi from "joi";
+import Joi from 'joi';
 
 const defaultOptions: Joi.ValidationOptions = {
   stripUnknown: true,
 };
 
-class ConfigurationService<Config = {}> {
+class ConfigurationService<Config> {
   private options: Joi.ValidationOptions;
+
   private config: Config;
+
   private validator: Joi.ObjectSchema<any>;
 
   constructor(validator: Joi.ObjectSchema, options?: Joi.ValidationOptions) {
@@ -15,8 +17,8 @@ class ConfigurationService<Config = {}> {
     this.config = {} as Config;
   }
 
-  public withStaticConfig(config: unknown) {
-    if (typeof config === "object" && !Array.isArray(config)) {
+  public withStaticConfig(config: unknown): ConfigurationService<Config> {
+    if (typeof config === 'object' && !Array.isArray(config)) {
       this.config = {
         ...this.config,
         ...config,
@@ -28,10 +30,10 @@ class ConfigurationService<Config = {}> {
       return this;
     }
 
-    throw Error("Config can only be of type object");
+    throw Error('Config can only be of type object');
   }
 
-  public withEnvironment() {
+  public withEnvironment(): ConfigurationService<Config> {
     this.config = {
       ...this.config,
       ...process.env,
@@ -39,10 +41,10 @@ class ConfigurationService<Config = {}> {
     return this;
   }
 
-  public validate() {
+  public validate(): Config {
     return this.validator.validateAsync(
       this.config,
-      this.options
+      this.options,
     ) as any as Config;
   }
 }

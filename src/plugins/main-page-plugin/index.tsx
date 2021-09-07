@@ -1,32 +1,32 @@
-import { Plugin, Request } from "@hapi/hapi";
-import { renderToStaticMarkup } from "react-dom/server";
-import { renderToStringWithData } from "@apollo/client/react/ssr";
-import React from "react";
-import { ApolloClient, InMemoryCache, ApolloLink } from "@apollo/client";
-import { SchemaLink } from "@apollo/client/link/schema";
-import { GraphQLSchema } from "graphql";
+import { Plugin, Request, ResponseToolkit } from '@hapi/hapi';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { renderToStringWithData } from '@apollo/client/react/ssr';
+import React from 'react';
+import { ApolloClient, InMemoryCache, ApolloLink } from '@apollo/client';
+import { SchemaLink } from '@apollo/client/link/schema';
+import { GraphQLSchema } from 'graphql';
 
-import ServerSideEntry from "./components/server-side-entry";
-import Html from "./components/html";
+import ServerSideEntry from './components/server-side-entry';
+import Html from './components/html';
 
 type PluginRequest = Request & { getSchema?: () => GraphQLSchema };
 
 const mainPagePlugin: Plugin<any> = {
-  name: "main-page-plugin",
-  version: "1.0.0",
+  name: 'main-page-plugin',
+  version: '1.0.0',
   register: (server) => {
     server.route({
-      method: "GET",
-      path: "/{param*}",
+      method: 'GET',
+      path: '/{param*}',
       handler,
     });
   },
 };
 
-async function handler(req: PluginRequest) {
+async function handler(req: PluginRequest, h: ResponseToolkit) {
   const schema = req.getSchema?.();
   if (!schema) {
-    throw new Error("No graphql schema define available on the request object");
+    throw new Error('No graphql schema define available on the request object');
   }
   const schemaLink = new SchemaLink({ schema });
 

@@ -1,7 +1,21 @@
-schema: "src/plugins/graphql-plugin/graphql/schema.graphql"
+schema: src/plugins/graphql-plugin/graphql/schema.graphql
+documents: src/components/**/*.graphql
 generates:
   ./src/@types/schema.d.ts:
     plugins:
       - typescript
+  ./src/components/hooks/index.ts:
+    plugins:
+      - add:
+          content: '/* eslint-disable */'
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+  ./src/plugins/graphql-plugin/graphql/resolvers.ts:
+    plugins:
+      - add:
+          content: '/* eslint-disable */'
+      - typescript
+      - typescript-resolvers
 require:
-  - "ts-node/register/transpile-only"
+  - 'ts-node/register/transpile-only'
